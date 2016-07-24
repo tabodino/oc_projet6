@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 9]> <html class="lt-ie9" lang="fr"> <![endif]-->
+<!--[if !IE] -->
+<html lang='fr'>
+<!-- <![endif] -->
+<head>
+
+    <title>NAO | Accueil</title>
+
+    <meta content='' name='keywords'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+
+    <!--[if IE]> <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'> <![endif]-->
+
+    <link href="assets/images/meta_icons/favicon.ico.png" rel='shortcut icon' type='image/x-icon'>
+    <link href="assets/images/meta_icons/apple-touch-icon.png" rel='apple-touch-icon-precomposed'>
+
+    {% block stylesheets %}
+
+        {% stylesheets filter="cssrewrite, ?scssphp"
+            'bundles/occore/css/bootstrap/bootstrap.min.css'
+            'bundles/occore/css/jednotka_green.css'
+            'bundles/occore/css/demo.css'
+        %}
+            <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+        {% endstylesheets %}
+
+
+    {% endblock %}
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body class='homepage'>
+<div id='wrapper'>
+    <header id='header'>
+        <div class='container'>
+            <nav class='navbar navbar-collapsed-sm navbar-default' id='nav' role='navigation'>
+                <div class='navbar-header'>
+                    <button class='navbar-toggle' data-target='.navbar-header-collapse' data-toggle='collapse' type='button'>
+                        <span class='sr-only'>Toggle navigation</span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+                    <a class='navbar-brand' href="index.html" >
+                        <h1>NOA</h1>
+                        <small>Fondation Nos Amis les Oiseaux</small>
+                        <!--<img alt="logo.svg" width="117" height="39" src="{{ asset('bundles/occore/img/logo.svg') }}" />-->
+                    </a>
+                </div>
+                <div class='collapse navbar-collapse navbar-header-collapse'>
+                    <ul class='nav navbar-nav navbar-right'>
+                        <li>
+                            <a href='#'><span>Accueil</span></a>
+
+                        </li>
+                        <li class='dropdown'>
+                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
+                    <span>
+                      Les espèces
+                      <i class='fa fa-angle-down'></i>
+                    </span>
+                            </a>
+                            <ul class='dropdown-menu' role='menu'>
+                                <li class=''>
+                                    <a href="about_us.html">Espece 1</a>
+                                </li>
+                                <li class=''>
+                                    <a href="services.html">Espece 2</a>
+                                </li>
+                                <li class=''>
+                                    <a href="faq.html">Espece 3</a>
+                                </li>
+                                <li>
+                                    <a href="404.html">Espece 4</a>
+                                </li>
+                                <li>
+                                    <a href="500.html">Espece 5</a>
+                                </li>
+                                <li>
+                                    <a href="coming_soon.html">Espece 6</a>
+                                </li>
+                                <li>
+                                    <a href="under_construction.html">Espece 7</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                       <!-- <li class='dropdown'>
+                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
+                    <span>
+                      Blog
+                      <i class='fa fa-angle-down'></i>
+                    </span>
+                            </a>
+                            <ul class='dropdown-menu' role='menu'>
+                                <li class=''>
+                                    <a href="blog_small.html">Small image</a>
+                                </li>
+                                <li class=''>
+                                    <a href="blog_large.html">Large image</a>
+                                </li>
+                                <li class=''>
+                                    <a href="blog_single_post.html">Single post</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='dropdown'>
+                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
+                    <span>
+                      Portfolio
+                      <i class='fa fa-angle-down'></i>
+                    </span>
+                            </a>
+                            <ul class='dropdown-menu' role='menu'>
+                                <li class=''>
+                                    <a href="portfolio.html">2 columns</a>
+                                </li>
+                                <li class=''>
+                                    <a href="portfolio_three_cols.html">3 columns</a>
+                                </li>
+                                <li class=''>
+                                    <a href="portfolio_four_cols.html">4 columns</a>
+                                </li>
+                                <li class=''>
+                                    <a href="portfolio_detail.html">Project detail</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <li>
+                            <a href='#'><span>Contact</span></a>
+                        </li>
+                        <li>
+                            <a href='#'><span>Connexion / Inscription</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+{% block body %}
+
+{% endblock body %}
+
+</div><!-- #wrapper -->
+
+{% block javascripts %}
+
+    {% javascripts
+        'bundles/occore/js/jquery/jquery.min.js'
+        'bundles/occore/js/jquery/jquery.mobile.custom.min.js'
+        'bundles/occore/js/bootstrap/bootstrap.min.js'
+        'bundles/occore/js/plugins/modernizr/modernizr.custom.min.js'
+        'bundles/occore/js/plugins/hover_dropdown/twitter-bootstrap-hover-dropdown.min.js'
+        'bundles/occore/js/plugins/retina/retina.min.js'
+        'bundles/occore/js/plugins/knob/jquery.knob.js'
+        'bundles/occore/js/plugins/isotope/jquery.isotope.min.js'
+        'bundles/occore/js/plugins/isotope/jquery.isotope.sloppy-masonry.min.js'
+        'bundles/occore/js/plugins/validate/jquery.validate.min.js'
+        'bundles/occore/js/plugins/flexslider/jquery.flexslider.min.js'
+        'bundles/occore/js/plugins/countdown/countdown.js'
+        'bundles/occore/js/plugins/nivo_lightbox/nivo-lightbox.min.js'
+        'bundles/occore/js/plugins/cycle/jquery.cycle.all.min.js'
+        'bundles/occore/js/jednotka.js'
+        'bundles/occore/js/demo.js'
+    %}
+
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+
+    {% endjavascripts %}
+
+
+
+{% endblock %}
+
+
+</body>
+
+</html>

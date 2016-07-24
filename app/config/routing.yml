@@ -1,4 +1,4 @@
 oc_core:
-    resource: "@OCCoreBundle/Controller/"
+    resource: "@OCCoreBundle/Controller"
     type:     annotation
     prefix:   /
