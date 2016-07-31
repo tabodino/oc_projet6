@@ -1,0 +1,202 @@
+$(document).ready(function(){
+    
+    /* --------------------------------------------------------
+        Growl Function
+    -----------------------------------------------------------*/
+    function notify(from, align, icon, type, animIn, animOut, title, message){
+       $.growl({
+           icon: icon,
+           title: title || 'Bootstrap Growl ',
+           message: message || 'Turning standard Bootstrap alerts into awesome notifications',
+           url: ''
+       },{
+               element: 'body',
+               type: type,
+               allow_dismiss: true,
+               placement: {
+                       from: from,
+                       align: align
+               },
+               offset: {
+                   x: 20,
+                   y: 85
+               },
+               spacing: 10,
+               z_index: 1031,
+               delay: 2500,
+               timer: 1000,
+               url_target: '_blank',
+               mouse_over: false,
+               animate: {
+                       enter: animIn,
+                       exit: animOut
+               },
+               icon_type: 'class',
+               template: '<div data-growl="container" class="alert" role="alert">' +
+                               '<button type="button" class="close" data-growl="dismiss">' +
+                                   '<span aria-hidden="true">&times;</span>' +
+                                   '<span class="sr-only">Close</span>' +
+                               '</button>' +
+                               '<span data-growl="icon"></span>' +
+                               '<span data-growl="title"></span>' +
+                               '<span data-growl="message"></span>' +
+                               '<a href="#" data-growl="url"></a>' +
+                           '</div>'
+       });
+    };
+    
+    /* --------------------------------------------------------
+        Welcome Message
+    -----------------------------------------------------------*/
+   // notify('top', 'right', '', 'inverse', 'animated fadeIn', 'animated fadeOut', 'Welcome back ', 'Mallinda Hollaway!');
+    
+    /* --------------------------------------------------------
+        Animations
+    -----------------------------------------------------------*/
+    $('body').on('click', '.animation-demo .ad-btn', function(){
+        var animation = $(this).text();
+        var cardImg = $(this).closest('.animation-demo').find('img');
+        
+        if (animation === "hinge") {
+            animationDuration = 2100;
+        }
+        else {
+            animationDuration = 1200;
+        }
+        
+        cardImg.removeAttr('class');
+        cardImg.addClass('animated '+animation);
+        
+        setTimeout(function(){
+            cardImg.removeClass(animation);
+        }, animationDuration);
+    });
+
+    /* --------------------------------------------------------
+        Notifications and Dialog
+    -----------------------------------------------------------*/
+    /*
+     * Notifications
+     */ 
+    $('.notifications > div > .btn').click(function(e){
+        e.preventDefault();
+        var nFrom = $(this).attr('data-from');
+        var nAlign = $(this).attr('data-align');
+        var nIcons = $(this).attr('data-icon');
+        var nType = $(this).attr('data-type');
+        var nAnimIn = $(this).attr('data-animation-in');
+        var nAnimOut = $(this).attr('data-animation-out');
+        
+        notify(nFrom, nAlign, nIcons, nType, nAnimIn, nAnimOut);
+    });
+
+    /*
+     * Dialogs
+     */
+ 
+    //Basic
+    $('#sa-basic').click(function(){
+        swal("Here's a message!");
+    });
+ 
+    //A title with a text under
+    $('#sa-title').click(function(){
+        swal("Here's a message!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat, tincidunt vitae ipsum et, pellentesque maximus enim. Mauris eleifend ex semper, lobortis purus sed, pharetra felis")
+    });
+ 
+    //Success Message
+    $('#sa-success').click(function(){
+        swal("Good job!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat, tincidunt vitae ipsum et, pellentesque maximus enim. Mauris eleifend ex semper, lobortis purus sed, pharetra felis", "success")
+    });
+ 
+    //Warning Message
+    $('#sa-warning').click(function(){
+        swal({   
+            title: "Are you sure?",   
+            text: "You will not be able to recover this imaginary file!",   
+            type: "warning",   
+            showCancelButton: true,   
+            confirmButtonColor: "#DD6B55",   
+            confirmButtonText: "Yes, delete it!",   
+            closeOnConfirm: false 
+        }, function(){   
+            swal("Deleted!", "Your imaginary file has been deleted.", "success"); 
+        });
+    });
+    
+    //Parameter
+    $('#sa-params').click(function(){
+        var href= $(this).attr('href');
+        alert(href);
+        swal({
+            title: "Etes-vous sûr ?",
+            text: "Cette action est irreversible",
+            type: "warning",   
+            showCancelButton: true,   
+            confirmButtonColor: "#DD6B55",   
+            confirmButtonText: "Confirmer",
+            cancelButtonText: "Annuler",
+            closeOnConfirm: false,   
+            closeOnCancel: false 
+        }, function(isConfirm){   
+            if (isConfirm) {     
+                swal("Supprimé!", "L'utilisateur a été supprimé.", "success");
+                location.href = href;
+            } else {
+                swal("Annulé", "Aucune donnée supprimée.", "error");
+            } 
+        });
+    });
+ 
+    //Custom Image
+    $('#sa-image').click(function(){
+        swal({   
+            title: "Sweet!",   
+            text: "Here's a custom image.",   
+            imageUrl: "img/thumbs-up.png" 
+        });
+    });
+ 
+    //Auto Close Timer
+    $('#sa-close').click(function(){
+        swal({   
+           title: "Auto close alert!",   
+           text: "I will close in 2 seconds.",   
+           timer: 2000,   
+           showConfirmButton: false 
+       });
+    });
+
+
+    // Delete user in table
+    $('.sa-delete').click(function(){
+        var href= $(this).attr('href');
+        
+        swal({
+            title: "Etes-vous sûr ?",
+            text: "Cette action est irreversible",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Confirmer",
+            cancelButtonText: "Annuler",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        }, function(isConfirm){
+            if (isConfirm) {
+                swal("Supprimé!", "L'utilisateur a été supprimé.", "success");
+                location.href = href;
+            } else {
+                swal("Annulé", "Aucune donnée supprimée.", "error");
+            }
+        });
+    });
+
+    // Show form price edit
+    $('.edit-price').click(function() {
+        $(this).hide();
+        $(this).next('form').show();
+    });
+    
+    
+});

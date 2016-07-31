@@ -2,116 +2,151 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbdb2aac-ea0c-4d30-b300-bdb43de61b83" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts/font-awesome/fontawesome-webfont.eot-" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts/font-awesome/fontawesome-webfont.eot-v=4.6.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts/font-awesome/fontawesome-webfont.ttf-v=4.6.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts/font-awesome/fontawesome-webfont.woff-v=4.6.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts/font-awesome/fontawesome-webfont.woff2-v=4.6.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/bg_fullsize.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/bg_patterns/bg_boxed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/bg_wrapper.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/bg_wrapper@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/bg_fullsize.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/bg_wrapper.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/bg_wrapper@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/bg_wrapper_bw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/bg_wrapper_bw@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/1_lg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/2_lg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/3_lg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/blog/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/carousels/bokeh.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/carousels/circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/carousels/forest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/carousels/iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/carousels/man.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/carousels/sea.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/common/chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/common/devices.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/last_projects/blueberries.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/last_projects/cyclist.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/last_projects/photographer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/last_projects/wipe_ears.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/logos/apple.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/logos/behance.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/logos/dribbble.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/logos/envato.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/logos/jquerymobile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/logos/wp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/panels/panel_bg_chess.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/panels/panel_bg_compass.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/panels/panel_bg_hat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/project.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/1@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/2@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/3@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/profiles/4@2x.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/stream/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/stream/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/stream/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/stream/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/stream/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/stream/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/timeline/cyclist.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/timeline/hat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/timeline/wipe_ears.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/meta_icons/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/meta_icons/favicon.ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/close@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/loading@2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/next@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/plugins/nivo_slider/prev@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/css/bootstrap/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/css/jednotka_green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts/font-awesome/fontawesome-webfont.svg-v=4.6.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/demo/portfolio/project_logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/ie/backgroundsize.min.htc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/bootstrap/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/ie/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/ie/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/jednotka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/jquery/jquery.mobile.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/countdown/countdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/cycle/jquery.cycle.all.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/flexslider/jquery.flexslider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/hover_dropdown/twitter-bootstrap-hover-dropdown.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/isotope/jquery.isotope.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/isotope/jquery.isotope.sloppy-masonry.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/knob/jquery.knob.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/modernizr/modernizr.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/nivo_lightbox/nivo-lightbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/retina/retina.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js/plugins/validate/jquery.validate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Material-Design-Iconic-Font.ttf-v=2.1.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Material-Design-Iconic-Font.woff-v=2.1.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Bold-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Bold-webfont.eot-" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Bold-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Light-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Light-webfont.eot-" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Light-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Medium-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Medium-webfont.eot-" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Medium-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Medium-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Regular-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Regular-webfont.eot-" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Regular-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/glyphicons-halflings-regular.eot-" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/aide_acces_rapide.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/aide_calendrier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/aide_profil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/aide_tarif.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/firefox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/invoice-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/mCSB_buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/opera.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/safari.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/video-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/vimeo-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/wheel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/img/youtube-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Apodiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Caprimulgiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Charadriiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Ciconiiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Columbiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Coraciiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Craciformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Cuculiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Falconiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Galbuliformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Galliformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Gaviiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Gruiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Passeriformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Piciformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Podicipediformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Procellariiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Psittaciformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Sphenisciformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Strigiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Tinamiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Trochiliformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Trogoniformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Turniciformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders/Upupiformes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Controller/AdminController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/app.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/bootstrap-select.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/chosen.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/farbtastic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/fullcalendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/jquery.bootgrid.override.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/jquery.mCustomScrollbar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/jquery.nouislider.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/lightgallery.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/material-design-iconic-font.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/summernote.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/sweet-alert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Bold-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Light-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Medium-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/Roboto-Regular-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/autosize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/bar-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/bootstrap-growl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/bootstrap-select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/charts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/chosen.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/curved-line-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/curvedLines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/dynamic-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/farbtastic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/fileinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/input-mask.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.bootgrid-override.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.bootstrap.wizard.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.easypiechart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.flot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.flot.orderBars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.flot.pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.flot.resize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.flot.tooltip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.mCustomScrollbar.concat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.nouislider.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.placeholder.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/jquery.sparkline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/lg-fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/lg-zoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/lightgallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/line-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/sample_french.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/summernote.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/sweet-alert.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/public/js/typeahead.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/views/_components/footer.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/views/_components/header.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/views/_components/sidebar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/BackBundle/Resources/views/layout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/EntityManager/TaxrefManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Repository/TaxrefRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/contact.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/detailSpecies.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/species.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" />
     </list>
     <ignored path="oc_projet6.iws" />
@@ -137,8 +172,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" column="141" selection-start-line="40" selection-start-column="141" selection-end-line="40" selection-end-column="141" />
+            <state relative-caret-position="462">
+              <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -147,8 +182,60 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="57" column="126" selection-start-line="57" selection-start-column="126" selection-end-line="57" selection-end-column="126" />
+            <state relative-caret-position="594">
+              <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/contact.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaxrefRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Repository/TaxrefRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="27" column="51" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="51" />
+              <folding>
+                <marker date="1469995733155" expanded="true" signature="649:902" placeholder="SELECT t FRO... OCCoreBundle" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoreController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailSpecies.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/detailSpecies.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="species.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/species.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -167,11 +254,23 @@
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
         <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/css/demo.css" />
-        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/BackBundle/Resources/views/_components/footer.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/BackBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/BackBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/OC/BackBundle/Controller/CoreController.php" />
+        <option value="$PROJECT_DIR$/src/OC/BackBundle/Controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/contact.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Entity/Taxref.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Repository/TaxrefRepository.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/EntityManager/TaxrefManager.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/species.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/detailSpecies.html.twig" />
         <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -181,11 +280,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
-    <option name="y" value="15" />
-    <option name="width" value="1682" />
+    <option name="x" value="-36" />
+    <option name="width" value="1920" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -213,6 +314,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,6 +330,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="occore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="occore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,10 +542,6 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -395,11 +573,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,8 +602,30 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oc_projet6" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,83 +651,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font-awesome" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oc_projet6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oc_projet6" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oc_projet6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oc_projet6" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="EntityManager" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -571,7 +691,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OC" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -588,15 +712,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -607,10 +726,11 @@
       <recent name="$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img/orders" />
+      <recent name="$PROJECT_DIR$/src/OC/BackBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/OC/BackBundle/Resources/public" />
       <recent name="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/js" />
       <recent name="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/img" />
-      <recent name="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/css" />
-      <recent name="$PROJECT_DIR$/src/OC/CoreBundle/Resources/public/fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -648,6 +768,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cbdb2aac-ea0c-4d30-b300-bdb43de61b83" name="Default" comment="" />
@@ -656,22 +779,27 @@
       <option name="presentableId" value="Default" />
       <updated>1469352949494</updated>
       <workItem from="1469352950994" duration="4082000" />
-      <workItem from="1469364409579" duration="4882000" />
+      <workItem from="1469364409579" duration="5014000" />
+      <workItem from="1469563673562" duration="2702000" />
+      <workItem from="1469737702719" duration="2342000" />
+      <workItem from="1469978675849" duration="13060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8964000" />
+    <option name="totallyTimeSpent" value="27200000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="119" y="15" width="1682" height="1055" extended-state="0" />
+    <frame x="-36" y="0" width="1920" height="1055" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23273809" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18769552" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -681,24 +809,112 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3146">
+          <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" column="141" selection-start-line="40" selection-start-column="141" selection-end-line="40" selection-end-column="141" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,9 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#44#101#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,18 +976,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,17 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#44#101#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,18 +1035,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Resources/views/_components/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Resources/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/BackBundle/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/config/doctrine/Taxref.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Entity/Taxref.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Repository/TaxrefRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="27" column="51" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <marker date="1469995733155" expanded="true" signature="649:902" placeholder="SELECT t FRO... OCCoreBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/EntityManager/TaxrefManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="45" column="71" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/species.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Controller/CoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/detailSpecies.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/Core/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="141" selection-start-line="40" selection-start-column="141" selection-end-line="40" selection-end-column="141" />
+        <state relative-caret-position="462">
+          <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OC/CoreBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="57" column="126" selection-start-line="57" selection-start-column="126" selection-end-line="57" selection-end-column="126" />
+        <state relative-caret-position="594">
+          <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
           <folding />
         </state>
       </provider>

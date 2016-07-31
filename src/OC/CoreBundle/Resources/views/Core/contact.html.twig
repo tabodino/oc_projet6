@@ -1,0 +1,75 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <h1 class='title'>
+                    Contact
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <div id='main-content'>
+        <div id='map-canvas'></div>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <p class='lead text-center no-mg-b'>Merci de remplir le formulaire suivant,<br> nous vous contacterons dans les meilleurs délais.</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-9 col-md-offset-2 col-sm-8 col-sm-offset-2'>
+                    <div class='page-header page-header-with-icon'>
+                        <i class='fa fa-envelope'></i>
+                        <h2>Formulaire de contact</h2>
+                    </div>
+                    <form class='form form-validation form-contact' method='post'>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <div class='alert alert-success form-contact-success hidden'>Thanks! Your message has been successfully sent!</div>
+                                <div class='alert alert-danger form-contact-error hidden'>Ooops! There was an error sending your message.</div>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <input class='form-control' data-rule-required='true' name='name' placeholder='Votre nom' type='text'>
+                                    <!-- / this field is required for simple anti spam function, don't remove it! -->
+                                    <input class='form-control' name='human' placeholder='Are you human?' style='display: none;' type='text'>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <input class='form-control' data-rule-email='true' data-rule-required='true' name='email' placeholder='E-Mail' type='email'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <div class='form-group control-group'>
+                                    <textarea class='form-control' data-rule-required='true' name='message' placeholder='Votre message...'></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <button class='btn btn-contrast btn-block form-contact-submit' data-loading-text="&lt;i class='fa fa-refresh fa-spin'&gt;&lt;/i&gt; Sending..." type='submit'>
+                                    Envoyer
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='fade' id='scroll-to-top'>
+        <i class='fa fa-chevron-up'></i>
+    </div>
+
+
+{% endblock body %}

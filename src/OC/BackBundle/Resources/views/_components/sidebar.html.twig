@@ -1,0 +1,73 @@
+<aside id="sidebar">
+
+    <!--| MAIN MENU |-->
+    <ul class="side-menu">
+        <li class="sm-sub sms-profile">
+            <a class="clearfix" href="">
+                <img src="{{ asset('bundles/occore/img/pic.jpg') }}" alt="profil pic">
+
+                <span class="f-11">
+                    <span class="d-block">{{ app.user }}</span>
+                    <small class="text-lowercase">{{ app.user.email }}</small>
+                </span>
+            </a>
+
+            <ul>
+                <li><a href="{{ path('oc_back_profile') }}">Mon profil</a></li>
+                <li><a href="">Changer mot de passe</a></li>
+                <li><a href="{{ path('fos_user_security_logout') }}">Me déconnecter</a></li>
+            </ul>
+        </li>
+
+        <li class="active">
+            <a href="{{ path('oc_back_homepage') }}">
+                <i class="zmdi zmdi-home"></i>
+                <span>Accueil</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('oc_back_pricelist') }}">
+                <i class="zmdi zmdi-money-box"></i>
+                <span>Tarifs</span>
+            </a>
+        </li>
+
+        <li class="sm-sub">
+            <a href="">
+                <i class="zmdi zmdi-account"></i>
+                <span>Utilisateurs</span>
+            </a>
+            <ul>
+                <li><a href="{{ path('oc_back_profile') }}">Mon profil</a></li>
+                <li><a href="{{ path('oc_back_users') }}">Voir les utilisateurs</a></li>
+                <li><a href="{{ path('fos_user_registration_register') }}">Ajouter un utilisateur</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="{{ path('oc_back_stats') }}">
+                <i class="zmdi zmdi-trending-up"></i>
+                <span>Statistiques</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('oc_back_calendar') }}">
+                <i class="zmdi zmdi-calendar"></i>
+                <span>Calendrier</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('oc_back_help') }}">
+                <i class="zmdi zmdi-help"></i>
+                <span>Aide</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('fos_user_security_logout') }}">
+                <i class="zmdi zmdi-power-off"></i>
+                <span>Déconnexion</span>
+            </a>
+        </li>
+
+
+    </ul>
+</aside>

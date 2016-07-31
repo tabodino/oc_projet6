@@ -52,7 +52,7 @@
                         <span class='icon-bar'></span>
                         <span class='icon-bar'></span>
                     </button>
-                    <a class='navbar-brand' href="index.html" >
+                    <a class='navbar-brand' href="{{ path('oc_core_accueil') }}" >
                         <h1>NOA</h1>
                         <small>Fondation Nos Amis les Oiseaux</small>
                         <!--<img alt="logo.svg" width="117" height="39" src="{{ asset('bundles/occore/img/logo.svg') }}" />-->
@@ -61,84 +61,15 @@
                 <div class='collapse navbar-collapse navbar-header-collapse'>
                     <ul class='nav navbar-nav navbar-right'>
                         <li>
-                            <a href='#'><span>Accueil</span></a>
+                            <a href='{{ path('oc_core_accueil') }}'><span>Accueil</span></a>
 
                         </li>
                         <li class='dropdown'>
-                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
-                    <span>
-                      Les espèces
-                      <i class='fa fa-angle-down'></i>
-                    </span>
-                            </a>
-                            <ul class='dropdown-menu' role='menu'>
-                                <li class=''>
-                                    <a href="about_us.html">Espece 1</a>
-                                </li>
-                                <li class=''>
-                                    <a href="services.html">Espece 2</a>
-                                </li>
-                                <li class=''>
-                                    <a href="faq.html">Espece 3</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">Espece 4</a>
-                                </li>
-                                <li>
-                                    <a href="500.html">Espece 5</a>
-                                </li>
-                                <li>
-                                    <a href="coming_soon.html">Espece 6</a>
-                                </li>
-                                <li>
-                                    <a href="under_construction.html">Espece 7</a>
-                                </li>
-                            </ul>
-                        </li>
+                            <a href='{{ path('oc_core_especes') }}'><span>Les espèces</span></a>
 
-                       <!-- <li class='dropdown'>
-                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
-                    <span>
-                      Blog
-                      <i class='fa fa-angle-down'></i>
-                    </span>
-                            </a>
-                            <ul class='dropdown-menu' role='menu'>
-                                <li class=''>
-                                    <a href="blog_small.html">Small image</a>
-                                </li>
-                                <li class=''>
-                                    <a href="blog_large.html">Large image</a>
-                                </li>
-                                <li class=''>
-                                    <a href="blog_single_post.html">Single post</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class='dropdown'>
-                            <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
-                    <span>
-                      Portfolio
-                      <i class='fa fa-angle-down'></i>
-                    </span>
-                            </a>
-                            <ul class='dropdown-menu' role='menu'>
-                                <li class=''>
-                                    <a href="portfolio.html">2 columns</a>
-                                </li>
-                                <li class=''>
-                                    <a href="portfolio_three_cols.html">3 columns</a>
-                                </li>
-                                <li class=''>
-                                    <a href="portfolio_four_cols.html">4 columns</a>
-                                </li>
-                                <li class=''>
-                                    <a href="portfolio_detail.html">Project detail</a>
-                                </li>
-                            </ul>
-                        </li>-->
                         <li>
-                            <a href='#'><span>Contact</span></a>
+                            <a href='{{ path('oc_core_contact') }}'><span>Contact</span></a>
                         </li>
                         <li>
                             <a href='#'><span>Connexion / Inscription</span></a>
@@ -153,6 +84,75 @@
 {% block body %}
 
 {% endblock body %}
+
+    <footer id='footer'>
+        <div id='footer-main'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-4 col-sm-6 info-box'>
+
+                        <h2 class='title'>Le mot du fondateur</h2>
+
+                        <p class='no-mg-b'>Integer vulputate porta augue, sit amet interdum tellus commodo et. Sed volutpat neque vel turpis ultrices sini bibendum. Aliquam quis malesuada.</p>
+                    </div>
+                    <div class='col-md-3 col-md-offset-1 col-sm-6 info-box'>
+                        <h2 class='title'>Contact</h2>
+                        <div class='icon-boxes'>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa fa-map-marker'></i>
+                                </div>
+                                <div class='content'>
+                                    10 rue du pigeonnier
+                                    <br>
+                                    75000 PARIS
+                                </div>
+                            </div>
+                            <div class='icon-box'>
+                                <div class='icon icon-wrap'>
+                                    <i class='fa fa-phone'></i>
+                                </div>
+                                <div class='content'>
+                                    <span>01 23 45 67 89</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class='col-md-4 col-sm-6 info-box'>
+                        <h2 class='title'>Mon compte</h2>
+                        <p><a href="">Je dispose d'un compte</a></p>
+                        <p><a href="">Je desire créer un compte</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='footer-copyright'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-12 clearfix'>
+                        <p class='copyright'>
+                            Copyright &copy; 2016 - NAO
+                        </p>
+                        <!--<div class='links'>
+                            <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
+                                <i class='fa fa-twitter text-dark'></i>
+                            </a>
+                            <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
+                                <i class='fa fa-dribbble text-dark'></i>
+                            </a>
+                            <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
+                                <i class='fa fa-facebook text-dark'></i>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </div><!-- #wrapper -->
 

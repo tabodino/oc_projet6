@@ -1,0 +1,76 @@
+<header id="header" class="clearfix" data-spy="affix" data-offset-top="65">
+    <ul class="header-inner">
+
+        <!-- Logo -->
+        <li class="logo">
+            <a href="{{ path('oc_back_homepage') }}"><img src="{{ asset('bundles/occore/img/logo.png') }}"  alt="logo"> Administration</a>
+            <div id="menu-trigger"><i class="zmdi zmdi-menu"></i></div>
+        </li>
+
+        <li class="hidden-xs hidden-sm"><h2> Partie administration Musée du Louvre</h2></li>
+
+
+        <!-- Quick Apps -->
+        <li class="hidden-xs dropdown pull-right">
+            <a href="" data-toggle="dropdown">
+                <i class="zmdi zmdi-apps"></i>
+            </a>
+
+            <div class="dropdown-menu pull-right" id="launch-apps">
+                <div class="dropdown-header bg-teal">ACCES RAPIDE</div>
+
+                <div class="la-body">
+                    <div class="lab-item">
+                        <a href="{{ path('oc_back_calendar') }}" class="bg-teal">
+                            <i class="zmdi zmdi-calendar"></i>
+                        </a>
+                        <small>Calendrier</small>
+                    </div>
+
+                    <div class="lab-item">
+                        <a href="{{ path('oc_back_users') }}" class="bg-green">
+                            <i class="zmdi zmdi-account"></i>
+                        </a>
+                        <small>Utilisateurs</small>
+                    </div>
+
+                    <div class="lab-item">
+                        <a href="{{ path('oc_back_pricelist') }}" class="bg-blue">
+                            <i class="zmdi zmdi-money-box"></i>
+                        </a>
+                        <small>Tarifs</small>
+                    </div>
+
+                    <div class="lab-item">
+                        <a href="{{ path('oc_back_stats') }}" class="bg-orange">
+                            <i class="zmdi zmdi-trending-up"></i>
+                        </a>
+                        <small>Statistiques</small>
+                    </div>
+
+                    <div class="lab-item">
+                        <a href="{{ path('oc_back_help') }}" class="bg-cyan">
+                            <i class="zmdi zmdi-help-outline"></i>
+                        </a>
+                        <small>Aide</small>
+                    </div>
+
+                    <div class="lab-item">
+                        <a href="{{ path('fos_user_security_logout') }}" class="bg-red">
+                            <i class="zmdi zmdi-power-off"></i>
+                        </a>
+                        <small>Déconnexion</small>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Time -->
+        <li class="pull-right hidden-xs">
+            <div id="time">
+                <span id="t-hours"></span>
+                <span id="t-min"></span>
+                <span id="t-sec"></span>
+            </div>
+        </li>
+    </ul>
+</header>

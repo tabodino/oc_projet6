@@ -1,0 +1,43 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block body %}
+
+<div id='main' role='main'>
+    <div id='main-content-header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1 class='title'>Les espèces</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='main-content'>
+        <div class='container'>
+
+            <div class='row portfolio-boxes' id='portfolio-container'>
+
+                {% for o in orders %}
+                    <div class='col-sm-2 portfolio-box portfolio-filter-photography portfolio-item'>
+                        <a href="{{ path('oc_core_details_espece', {'order': o.ordre}) }}" >
+                            <div class='image-link'>
+                                <i class='fa fa-search'></i>
+                                <img class="img-responsive img-rounded center-block" alt="{{ o.ordre }}" width="585" height="382" src="{{ asset('bundles/occore/img/orders/'~o.ordre) }}.jpg"  />
+                            </div>
+                            <h4 class='title'>{{ o.ordre }}</h4>
+
+                        </a>
+                    </div>
+
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+    <div class='fade' id='scroll-to-top'>
+        <i class='fa fa-chevron-up'></i>
+    </div>
+</div>
+{% endblock body %}
