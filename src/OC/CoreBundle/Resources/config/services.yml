@@ -2,3 +2,7 @@ services:
     oc_core_taxref.manager:
         class: OC\CoreBundle\EntityManager\TaxrefManager
         arguments: ["@doctrine.orm.default_entity_manager"]
+
+    oc_core_mailer:
+        class: OC\CoreBundle\Services\Mailer
+        arguments: ["@mailer", "@templating", "%admin_email%"]

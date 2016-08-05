@@ -1,0 +1,31 @@
+{% extends "OCBackBundle:User:layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+
+<body class="login-content">
+
+
+<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+<div class="lc-block toggled" id="l-login">
+    <div class="lcb-float"><img src="{{ asset('bundles/occore/img/logo.png') }}" alt="logo NAO"></div>
+
+    <small class="m-b-15 d-block">Un email de confirmation vous sera envoyé et vous pourrez réinitiliaser votre mot de passe.</small>
+
+    <div class="form-group">
+        <input type="text" id="username" name="username" required="required" class="form-control" placeholder="Votre identifiant" />
+    </div>
+    <input type="submit" class="btn btn-block btn-warning" value="Réinitialiser" />
+    <br>
+    <div class="c-red">
+        {% if invalid_username is defined %}
+            <p>{{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}) }}</p>
+        {% endif %}
+
+    </div>
+
+</div>
+</form>
+{% endblock body %}
+

@@ -1,9 +1,34 @@
 oc_back:
     resource: "@OCBackBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 oc_core:
     resource: "@OCCoreBundle/Controller"
     type:     annotation
     prefix:   /
+
+fos_user_profile_show:
+    path: /admin/profil
+
+
+fos_user_change_password:
+    path: /admin/profil
+    defaults: { _controller:FOSUserBundle:ChangePassword:changePassword }
+    methods: [GET, POST]
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+fos_user_registration_register:
+    path:      /inscription
+    defaults:  { _controller: FOSUserBundle:Registration:register }
+    methods: [GET, POST]
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+    prefix: /
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting

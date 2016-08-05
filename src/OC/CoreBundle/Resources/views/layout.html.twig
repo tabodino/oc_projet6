@@ -6,7 +6,7 @@
 <!-- <![endif] -->
 <head>
 
-    <title>NAO | Accueil</title>
+    <title>NAO | {% block title %}Accueil{% endblock title %}</title>
 
     <meta content='' name='keywords'>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -53,9 +53,10 @@
                         <span class='icon-bar'></span>
                     </button>
                     <a class='navbar-brand' href="{{ path('oc_core_accueil') }}" >
+                        <img alt="logo" height="50" src="{{ asset('bundles/occore/img/logo.png') }}" style="float: left;margin-top:5%;"/>
                         <h1>NOA</h1>
-                        <small>Fondation Nos Amis les Oiseaux</small>
-                        <!--<img alt="logo.svg" width="117" height="39" src="{{ asset('bundles/occore/img/logo.svg') }}" />-->
+                        <small>Association Nos Amis les Oiseaux</small>
+
                     </a>
                 </div>
                 <div class='collapse navbar-collapse navbar-header-collapse'>
@@ -64,7 +65,7 @@
                             <a href='{{ path('oc_core_accueil') }}'><span>Accueil</span></a>
 
                         </li>
-                        <li class='dropdown'>
+                        <li>
                             <a href='{{ path('oc_core_especes') }}'><span>Les espèces</span></a>
 
                         </li>
@@ -72,7 +73,10 @@
                             <a href='{{ path('oc_core_contact') }}'><span>Contact</span></a>
                         </li>
                         <li>
-                            <a href='#'><span>Connexion / Inscription</span></a>
+                            <a href='{{ path('fos_user_registration_register') }}'><span>Inscription</span></a>
+                        </li>
+                        <li>
+                            <a href='{{ path('fos_user_security_login') }}'><span>Connexion</span></a>
                         </li>
                     </ul>
                 </div>
@@ -93,7 +97,7 @@
 
                         <h2 class='title'>Le mot du fondateur</h2>
 
-                        <p class='no-mg-b'>Integer vulputate porta augue, sit amet interdum tellus commodo et. Sed volutpat neque vel turpis ultrices sini bibendum. Aliquam quis malesuada.</p>
+                        <p class='no-mg-b'>Présents partout, les oiseaux sont de précieux indicateurs de l'état de la biodiversité, des véritables baromètres des changements environnementaux. </p><small>"Michel Dujardin"</small>
                     </div>
                     <div class='col-md-3 col-md-offset-1 col-sm-6 info-box'>
                         <h2 class='title'>Contact</h2>
@@ -123,8 +127,8 @@
 
                     <div class='col-md-4 col-sm-6 info-box'>
                         <h2 class='title'>Mon compte</h2>
-                        <p><a href="">Je dispose d'un compte</a></p>
-                        <p><a href="">Je desire créer un compte</a></p>
+                        <p><a href="{{ path('fos_user_security_login') }}">Je dispose d'un compte</a></p>
+                        <p><a href="{{ path('fos_user_registration_register') }}">Je désire créér un compte</a></p>
 
                     </div>
                 </div>
@@ -137,17 +141,7 @@
                         <p class='copyright'>
                             Copyright &copy; 2016 - NAO
                         </p>
-                        <!--<div class='links'>
-                            <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
-                                <i class='fa fa-twitter text-dark'></i>
-                            </a>
-                            <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
-                                <i class='fa fa-dribbble text-dark'></i>
-                            </a>
-                            <a class='btn btn-circle btn-medium-light btn-sm' href='#'>
-                                <i class='fa fa-facebook text-dark'></i>
-                            </a>
-                        </div>-->
+
                     </div>
                 </div>
             </div>
@@ -168,13 +162,12 @@
         'bundles/occore/js/plugins/knob/jquery.knob.js'
         'bundles/occore/js/plugins/isotope/jquery.isotope.min.js'
         'bundles/occore/js/plugins/isotope/jquery.isotope.sloppy-masonry.min.js'
-        'bundles/occore/js/plugins/validate/jquery.validate.min.js'
         'bundles/occore/js/plugins/flexslider/jquery.flexslider.min.js'
         'bundles/occore/js/plugins/countdown/countdown.js'
         'bundles/occore/js/plugins/nivo_lightbox/nivo-lightbox.min.js'
         'bundles/occore/js/plugins/cycle/jquery.cycle.all.min.js'
         'bundles/occore/js/jednotka.js'
-        'bundles/occore/js/demo.js'
+
     %}
 
     <script type="text/javascript" src="{{ asset_url }}"></script>

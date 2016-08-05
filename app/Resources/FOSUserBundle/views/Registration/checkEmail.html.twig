@@ -1,0 +1,48 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block title %}Email envoyé{% endblock title %}
+
+{% block body %}
+<div id='main' role='main'>
+    <div id='main-content-header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1 class='title'>Email envoyé</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='main-content'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <p class='lead text-center no-mg-b'>Plus qu'une étape pour finaliser la création de votre compte.</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2'>
+                    <div class='page-header page-header-with-icon'>
+                        <i class='fa fa-envelope'></i>
+                        <h2>Un email a été envoyé.</h2>
+                        <br>
+                        <p>Nous venons de vous envoyer un email pour finaliser la création de votre compte.</p>
+                        <p>Cliquez sur le lien de confirmation contenu dans courriel pour terminer l'enregistrement.</p>
+                        <p>Si vous n'apercevez pas ce message dans votre boîte mail, pensez à vérifier dans les spams.</p>
+                        <br><br>
+                        <a href="{{ path('oc_core_accueil') }}" class="btn btn-block btn-success" >Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock body %}

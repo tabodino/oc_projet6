@@ -1,0 +1,28 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+    <body class="login-content">
+    <!-- Login -->
+    {{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+
+        <div class="lc-block toggled" id="l-login">
+            <div class="lcb-float"><i class="zmdi zmdi-pin-account"></i></div>
+
+            {{ form_widget(form) }}
+
+            <div class="clearfix"></div>
+
+
+            <input type="submit" id="_submit" name="_submit" value="Valider" class="btn btn-block btn-primary btn-float m-t-25" />
+            <br>
+            <div class="c-red">
+
+            </div>
+
+        </div>
+
+    {{ form_end(form) }}
+
+{% endblock body %}

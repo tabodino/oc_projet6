@@ -2,8 +2,12 @@
 
 namespace OC\CoreBundle\Controller;
 
+use OC\CoreBundle\Form\Handler\ContactFormHandler;
+use OC\CoreBundle\Form\Type\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\HttpFoundation\Request;
 
 class CoreController extends Controller
 {
@@ -18,9 +22,17 @@ class CoreController extends Controller
     /**
      * @Route("/contact", name="oc_core_contact")
      */
-    public function contactAction()
+    public function contactAction(Request $request)
     {
-        return $this->render('OCCoreBundle:Core:contact.html.twig');
+        $form = $this->createForm(ContactType::class);
+        // Récupération service mailer
+        $mailer = $this->get('oc_core_mailer');
+        // Gestion du formulaire
+        $formHandler = new ContactFormHandler($form, $request, $mailer);
+
+        if ($formHandler->process()) return $this->redirectToRoute('oc_core_contact');
+        
+        return $this->render('OCCoreBundle:Core:contact.html.twig', array('form' => $form->createView()));
     }
 
     /**
@@ -44,4 +56,5 @@ class CoreController extends Controller
 
         return $this->render('OCCoreBundle:Core:detailSpecies.html.twig', array('orders' => $orders, 'order' => $order));
     }
+    
 }

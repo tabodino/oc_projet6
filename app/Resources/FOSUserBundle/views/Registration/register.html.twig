@@ -1,0 +1,127 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block title %}Inscription{% endblock title %}
+
+{% block body %}
+<div id='main' role='main'>
+    <div id='main-content-header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1 class='title'>Inscription</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='main-content'>
+        <div id='map-canvas'></div>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <p class='lead text-center no-mg-b'>Inscrivez-vous pour pouvoir partager vos observations.</p>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-md-9 col-md-offset-2 col-sm-8 col-sm-offset-2'>
+                    <div class='page-header page-header-with-icon'>
+                        <i class='fa fa-envelope'></i>
+                        <h2>Inscription</h2>
+                    </div>
+                    <form class='form' action="{{ path('fos_user_registration_register') }}" method='post'>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                {% if not form.vars.valid %}
+
+                                <div class="alert alert-danger btn-block">
+
+                                    {{ form_errors(form.firstname) }}
+                                    {{ form_errors(form.lastname) }}
+                                    {{ form_errors(form.username) }}
+                                    {{ form_errors(form.email) }}
+                                    {{ form_errors(form.plainPassword.first) }}
+                                    {{ form_errors(form.plainPassword.second) }}
+
+
+                                </div>
+                                <br>
+
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class="col-sm-12">
+                                <div class='form-group control-group'>
+                                    <label class="required" >Vous êtes :</label><br>
+
+                                    {{ form_widget(form.category, {'attr': {'class': 'form-control', 'placeholder': 'Votre prénom'}}) }}
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <label class="required" >Prénom</label><br>
+                                    {{ form_label(form.firstname, 'prénom', {'label_attr': {'class': 'sr-only'}}) }}
+                                    {{ form_widget(form.firstname, {'attr': {'class': 'form-control', 'placeholder': 'Votre prénom'}}) }}
+                                </div>
+                            </div>
+
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <label class="required">Nom</label><br>
+                                    {{ form_widget(form.lastname, {'attr': {'class': 'form-control', 'placeholder': 'Votre nom'}}) }}
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <label class="required" for="fos_user_registration_form_email">Adresse e-mail</label><br>
+                                    <input id="fos_user_registration_form_email" type="email" required="required" name="fos_user_registration_form[email]" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <label class="required" for="fos_user_registration_form_username">Pseudo</label><br>
+                                    <input id="fos_user_registration_form_username" type="text" pattern=".{2,}" maxlength="255" required="required" class="form-control" name="fos_user_registration_form[username]">
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <label class="required" for="fos_user_registration_form_plainPassword_first">Mot de passe</label><br>
+                                    <input id="fos_user_registration_form_plainPassword_first" type="password" required="required" class="form-control" name="fos_user_registration_form[plainPassword][first]">
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class='form-group control-group'>
+                                    <label class="required" for="fos_user_registration_form_plainPassword_second">Vérification</label><br>
+                                    <input id="fos_user_registration_form_plainPassword_second" type="password" required="required" class="form-control" name="fos_user_registration_form[plainPassword][second]">
+                                </div>
+                            </div>
+
+                        </div>
+
+                            {{ form_row(form._token) }}
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <button class='btn btn-success btn-block form-contact-submit'  type='submit'>
+                                    {{ 'registration.submit'|trans }}
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='fade' id='scroll-to-top'>
+        <i class='fa fa-chevron-up'></i>
+    </div>
+</div>
+
+
+
+{% endblock body %}
