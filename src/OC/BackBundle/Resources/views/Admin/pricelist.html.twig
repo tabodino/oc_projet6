@@ -1,0 +1,55 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+    <section id="content">
+        <div class="container c-boxed">
+            <div class="text-center">
+                <h3 class="f-400 m-b-15">LISTE DES TARIFS</h3>
+                <p>Voici la liste des tarifs appliqués aux tickets de la billetterie en ligne.</p>
+            </div>
+
+            <div class="row pricing-table">
+                {% for price in prices %}
+                    <div class="col-sm-4">
+                        <div class="tile pt-inner">
+                            <div class="pti-header bg-bluegray">
+                                <div class="ptih-title bg-teal">{{ price.category }}</div>
+                                <h2>{{ price.price }} €</h2>
+
+                            </div>
+
+                            <div class="pti-body">
+
+                                <div class="ptib-item">
+                                    {% if price.ageMin != null %}
+                                        A partir de <strong>{{ price.ageMin }}</strong> ans
+                                    {% elseif price.ageMax != null %}
+                                        Jusqu'à <strong>{{ price.ageMax }}</strong> ans
+                                    {% else %}
+                                        {{ price.rule }}
+                                    {%  endif %}
+                                </div>
+
+                            </div>
+
+                            <div class="pti-footer">
+
+                                <button class="btn btn-block btn-primary edit-price"><i class="zmdi zmdi-edit"></i> Modifier le prix</button>
+                                <form style="display:none;" action="{{ path('oc_back_edit_price') }}" method="post">
+                                    <input type="number" name="price" step="any" min="0" max="99" value="{{ price.price }}">
+                                    <input type="hidden" name="id" value="{{ price.id }}">
+                                    <input type="submit" class="btn btn-primary" value="Changer">
+                                </form>
+                               <!-- <a href="" class="bg-lightblue"><i class="zmdi zmdi-edit"></i></a>-->
+                            </div>
+
+                        </div>
+                        <br>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

@@ -5,10 +5,8 @@ security:
     encoders:
         FOS\UserBundle\Model\UserInterface: sha512
     role_hierarchy:
-        ROLE_OBSERVATEUR: ROLE_OBSERVATEUR
-        ROLE_NATURALISTE: ROLE_NATURALISTE
-        ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_OBSERVATEUR, ROLE_NATURALISTE, ROLE_ALLOWED_TO_SWITCH]
+        ROLE_ADMIN:       ROLE_USER,
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
     providers:
         fos_userbundle:
             id: fos_user.user_provider.username_email
@@ -36,4 +34,4 @@ security:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: ^/admin/, role: IS_AUTHENTICATED_ANONYMOUSLY }

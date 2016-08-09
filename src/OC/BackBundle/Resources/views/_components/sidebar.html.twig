@@ -4,14 +4,12 @@
     <ul class="side-menu">
         <li class="sm-sub sms-profile">
             <a class="clearfix" href="">
-                <img src="{{ asset('bundles/occore/img/pic.jpg') }}" alt="profil pic">
 
                 <span class="f-11">
                     <span class="d-block">{{ app.user }}</span>
                     <small class="text-lowercase"></small>
                 </span>
             </a>
-
             <ul>
                 <li><a href="">Mon profil</a></li>
                 <li><a href="">Changer mot de passe</a></li>
@@ -28,7 +26,7 @@
         <li>
             <a href="">
                 <i class="zmdi zmdi-money-box"></i>
-                <span>Tarifs</span>
+                <span>Observations</span>
             </a>
         </li>
 
@@ -38,9 +36,9 @@
                 <span>Utilisateurs</span>
             </a>
             <ul>
-                <li><a href="">Mon profil</a></li>
-                <li><a href="">Voir les utilisateurs</a></li>
-                <li><a href="">Ajouter un utilisateur</a></li>
+                <li><a href="{{ path("oc_back_profile") }}">Mon profil</a></li>
+                <li><a href="{{ path("oc_back_users") }}">Voir les utilisateurs</a></li>
+                <li><a href="{{ path("oc_back_profile") }}">Ajouter un utilisateur</a></li>
             </ul>
         </li>
         <li>
@@ -52,11 +50,11 @@
         <li>
             <a href="">
                 <i class="zmdi zmdi-calendar"></i>
-                <span>Calendrier</span>
+                <span>Validations</span>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{ path('oc_back_help') }}">
                 <i class="zmdi zmdi-help"></i>
                 <span>Aide</span>
             </a>
@@ -67,7 +65,6 @@
                 <span>Déconnexion</span>
             </a>
         </li>
-
 
     </ul>
 </aside>

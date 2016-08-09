@@ -1,0 +1,140 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+    <section id="content">
+        <div class="container c-boxed">
+            <header class="page-header">
+                <h3>Calendrier</h3>
+            </header>
+
+            <div id="calendar"></div>
+
+            <!-- Add event -->
+            <div class="modal fade" id="addNew-event" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add an Event</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="addEvent" role="form">
+                                <div class="form-group">
+                                    <label for="eventName">Event Name</label>
+                                    <div class="fg-line">
+                                        <input type="text" class="input-sm form-control" id="eventName" placeholder="eg: Sports day">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="eventName">Tag Color</label>
+                                    <div class="event-tag">
+                                        <span data-tag="bg-teal" class="bg-teal selected"></span>
+                                        <span data-tag="bg-red" class="bg-red"></span>
+                                        <span data-tag="bg-pink" class="bg-pink"></span>
+                                        <span data-tag="bg-blue" class="bg-blue"></span>
+                                        <span data-tag="bg-lime" class="bg-lime"></span>
+                                        <span data-tag="bg-green" class="bg-green"></span>
+                                        <span data-tag="bg-cyan" class="bg-cyan"></span>
+                                        <span data-tag="bg-orange" class="bg-orange"></span>
+                                        <span data-tag="bg-purple" class="bg-purple"></span>
+                                        <span data-tag="bg-gray" class="bg-gray"></span>
+                                        <span data-tag="bg-black" class="bg-black"></span>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" id="getStart" />
+                                <input type="hidden" id="getEnd" />
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-sm" id="addEvent">Add Event</button>
+                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+{% block custom_script %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+
+            var cId = $('#calendar'); //Change the name if you want. I'm also using thsi add button for more actions
+
+            //Generate the Calendar
+            cId.fullCalendar({
+                header: {
+                    right: '',
+                    center: 'prev, title, next',
+                    left: ''
+                },
+
+                theme: true, //Do not remove this as it ruin the design
+                selectable: false,
+                selectHelper: false,
+                editable: false,
+
+
+                //Add Events
+                events: [
+                    {% for ticket in nbTicketByDay %}
+
+                    {
+                        title: '{{ ticket.1 }}',
+                        start: '{{ ticket.dateReservation|date('Y-m-d') }}',
+
+                    },
+                    {% endfor %}
+
+                ],
+
+                //On Day Select
+                select: function(start, end, allDay) {
+                    $('#addNew-event').modal('show');
+                    $('#addNew-event input:text').val('');
+                    $('#getStart').val(start);
+                    $('#getEnd').val(end);
+                }
+            });
+
+            //Create and ddd Action button with dropdown in Calendar header.
+            var actionMenu = '<ul class="actions actions-alt" id="fc-actions">' +
+                    '<li class="dropdown">' +
+                    '<a href="" data-toggle="dropdown"><i class="zmdi zmdi-more-vert"></i></a>' +
+                    '<ul class="dropdown-menu">' +
+                    '<li class="active">' +
+                    '<a data-view="month" href="">Vue du mois</a>' +
+                    '</li>' +
+                    '<li>' +
+                    '<a data-view="basicWeek" href="">Vue de la semaine</a>' +
+                    '</li>' +
+                    '</ul>' +
+                    '</div>' +
+                    '</li>';
+
+
+            cId.find('.fc-toolbar').append(actionMenu);
+
+
+            //Calendar views
+            $('body').on('click', '#fc-actions [data-view]', function(e){
+                e.preventDefault();
+                var dataView = $(this).attr('data-view');
+
+                $('#fc-actions li').removeClass('active');
+                $(this).parent().addClass('active');
+                cId.fullCalendar('changeView', dataView);
+            });
+
+
+        });
+    </script>
+{% endblock custom_script %}

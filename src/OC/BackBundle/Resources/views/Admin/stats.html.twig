@@ -1,0 +1,206 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+    <section id="content">
+        <div class="container">
+            <header class="page-header">
+                <h3>Statistiques</h3>
+            </header>
+
+            <div class="overview row">
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="o-item bg-cyan">
+                            <div class="oi-title">
+                                <span>Réservations journalières</span>
+                            </div>
+                            <div class="cb-item bg-cyan">
+                                <h3>{{ countVisitors.countDailyVisitor }}</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="o-item bg-amber">
+                            <div class="oi-title">
+                                <span>Réservations semaine dernière</span>
+                            </div>
+                            <div class="cb-item bg-amber">
+                                <h3>{{ countVisitors.countWeeklyVisitor }}</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="o-item bg-green">
+                            <div class="oi-title">
+                                <span>Réservations mensuelles</span>
+                            </div>
+                            <div class="cb-item bg-green">
+                                <h3>{{ countVisitors.countMonthlyVisitor }}</h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="o-item bg-bluegray">
+                            <div class="oi-title">
+                                <span>Réservations totales</span>
+                            </div>
+                            <div class="cb-item bg-bluegray">
+                                <h3>{{ countVisitors.countTotalVisitor }}</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title">TOP 5 NATIONS</div>
+                        </div>
+
+                        <div class="t-body tb-padding">
+                            <div class="main-chart">
+                                <div id="pie-chart" class="mc-pie"></div>
+                                <div class="flc-pie hidden-xs"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title">REPARTITION TARIFS</div>
+                        </div>
+
+                        <div class="t-body tb-padding">
+                            <div class="main-chart">
+                                <div id="donut-chart" class="mc-pie"></div>
+                                <div class="flc-donut hidden-xs"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+{% endblock content %}
+
+{% block custom_script %}
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var tabColor = ['#2196F3, #F44336', '#8BC34A', '#FFEB3B', '#009688', '#E91E63'];
+            var pieData = [
+            {% for country in countryVisitor %}
+                {
+                   value: {{ country.myCount }},
+                   data: {{ loop.index }},
+                   color: tabColor[{{ loop.index }}],
+                   label: '{{ country.country }}',
+                },
+            {% endfor %}
+            ];
+
+            var donutData = [
+            {% for price in countPrice %}
+                {
+                    value: {{ price.myCount }},
+                    data: {{ loop.index }},
+                    color: tabColor[{{ loop.index }}],
+                    label: '{{ price.category }}',
+                 },
+            {% endfor %}
+            ];
+
+            /* Pie Chart */
+
+            if ($('#pie-chart')[0]) {
+                $.plot('#pie-chart', pieData, {
+                    series: {
+                        pie: {
+                            show: true,
+                            stroke: {
+                                width: 2,
+                            },
+                        },
+                    },
+                    legend: {
+                        container: '.flc-pie',
+                        backgroundOpacity: 0.5,
+                        noColumns: 0,
+                        backgroundColor: "white",
+                        lineWidth: 0
+                    },
+                    grid: {
+                        hoverable: true,
+                        clickable: false
+                    },
+                    tooltip: true,
+                    showTooltips: true,
+                    multiTooltipTemplate: "<%= value %>",
+                    tooltipOpts: {
+                        content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                        shifts: {
+                            x: 20,
+                            y: 0
+                        },
+                        defaultTheme: false,
+                        cssClass: 'chart-tooltip'
+                    }
+
+                });
+            }
+
+            /* Donut Chart */
+
+            if ($('#donut-chart')[0]) {
+                $.plot('#donut-chart', donutData, {
+                    series: {
+                        pie: {
+                            innerRadius: 0.5,
+                            show: true,
+                            stroke: {
+                                width: 2,
+                            },
+                        },
+                    },
+                    legend: {
+                        container: '.flc-donut',
+                        backgroundOpacity: 0.5,
+                        noColumns: 0,
+                        backgroundColor: "white",
+                        lineWidth: 0
+                    },
+                    grid: {
+                        hoverable: true,
+                        clickable: true
+                    },
+                    tooltip: true,
+                    tooltipOpts: {
+                        content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                        shifts: {
+                            x: 20,
+                            y: 0
+                        },
+                        defaultTheme: false,
+                        cssClass: 'chart-tooltip'
+                    }
+
+                });
+            }
+        });
+    </script>
+{% endblock custom_script %}

@@ -1,0 +1,38 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+    <section id="content">
+        <div class="container">
+            <header class="page-header">
+                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Aide</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <!-- Body Copy -->
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title"><i class="zmdi zmdi-home"></i> Renseigner une observation</div>
+                        </div>
+
+                        <div class="t-body tb-padding">
+                            {{ form(form) }}
+
+                            <p>Capture Image: <input type="file" accept="image/*" id="capture" capture="camera">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

@@ -1,0 +1,61 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <section id="content">
+        <div class="container">
+
+            <header class="page-header">
+                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Utilisateurs</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title">Liste des utilisateurs</div>
+                            <br>
+                            <a href="{{ path('fos_user_registration_register') }}" class="btn bg-green"><i class="zmdi zmdi-plus-box"></i> Ajouter un utilisateur</a>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="bg-cyan">
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Nom utilisateur</th>
+                                    <th>Email</th>
+                                    <th>Dern. connexion</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for user in users %}
+                                    <tr>
+                                        <td>{{ loop.index }}</td>
+                                        <td>{{ user.username}}</td>
+                                        <td>{{ user.email }}</td>
+                                        <td>{{ user.lastLogin|date('d/m/Y') }}</td>
+                                        <td>
+                                            {% if app.user != user.username%}
+                                                <a href="{{ path('oc_back_delete_user', { 'id': user.id })}}" class="btn bg-red sa-delete" onclick="return false;"><i class="zmdi zmdi-delete"></i> Supprimer</a>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+{% endblock content %}

@@ -8,14 +8,14 @@ oc_core:
     type:     annotation
     prefix:   /
 
-fos_user_profile_show:
-    path: /admin/profil
+#fos_user_profile_show:
+ #   path: /admin/profil
 
 
-fos_user_change_password:
-    path: /admin/profil
-    defaults: { _controller:FOSUserBundle:ChangePassword:changePassword }
-    methods: [GET, POST]
+#fos_user_change_password:
+ #   path: /admin/profil
+  #  defaults: { _controller:FOSUserBundle:ChangePassword:changePassword }
+   # methods: [GET, POST]
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"

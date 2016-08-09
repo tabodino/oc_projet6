@@ -1,0 +1,82 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+    <section id="content">
+        <div class="container">
+            <header class="page-header">
+                <h3>Tableau de bord</h3>
+                <p><small>Statistiques globales</small></p>
+            </header>
+
+            <div class="overview row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="o-item bg-cyan">
+                        <div class="oi-title">
+                            <span>Réservations journalières</span>
+                        </div>
+                        <div class="cb-item bg-cyan">
+                            <h3></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="o-item bg-amber">
+                        <div class="oi-title">
+                            <span>Réservations semaine dernière</span>
+                        </div>
+                        <div class="cb-item bg-amber">
+                            <h3></h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="o-item bg-green">
+                        <div class="oi-title">
+                            <span>Réservations mensuelles</span>
+                        </div>
+                        <div class="cb-item bg-green">
+                            <h3></h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="o-item bg-bluegray">
+                        <div class="oi-title">
+                            <span>Réservations totales</span>
+                        </div>
+                        <div class="cb-item bg-bluegray">
+                            <h3></h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <!-- Calendar -->
+                    <div class="tile">
+                        <div class="calendar-widget"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block custom_script %}
+
+{% endblock custom_script %}

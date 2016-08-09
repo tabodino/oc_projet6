@@ -1,0 +1,59 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <section id="content">
+        <div class="container">
+
+            <header class="page-header">
+                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Observations</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title">Liste des observations</div>
+                            <br>
+                            <a href="{{ path('oc_back_observation_create') }}" class="btn bg-green"><i class="zmdi zmdi-plus-box"></i> Ajouter une observation</a>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="bg-cyan">
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Titre</th>
+                                    <th>Desc.</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for observation in observations %}
+                                    <tr>
+                                        <td>{{ loop.index }}</td>
+                                        <td>{{ observation.title}}</td>
+                                        <td>{{ observation.dsc }}</td>
+                                        <td>{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+{% endblock content %}
