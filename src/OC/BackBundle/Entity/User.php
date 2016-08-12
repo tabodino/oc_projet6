@@ -56,6 +56,16 @@ class User extends BaseUser
     }
 
     /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+
+
+    /**
      * Set firstname
      *
      * @param string $firstname

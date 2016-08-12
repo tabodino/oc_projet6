@@ -9,55 +9,49 @@
             </header>
 
             <div class="overview row">
+
+            <a href="{{ path('oc_back_observation_create') }}">
                 <div class="col-md-3 col-sm-6">
                     <div class="o-item bg-cyan">
                         <div class="oi-title">
-                            <span>Réservations journalières</span>
-                        </div>
-                        <div class="cb-item bg-cyan">
-                            <h3></h3>
+                            <span>Ajouter une observation</span>
                         </div>
 
                     </div>
 
                 </div>
-
+            </a>
+                <a href="{{ path('oc_back_observations') }}">
                 <div class="col-md-3 col-sm-6">
                     <div class="o-item bg-amber">
                         <div class="oi-title">
-                            <span>Réservations semaine dernière</span>
-                        </div>
-                        <div class="cb-item bg-amber">
-                            <h3></h3>
+                            <span>Consulter une observation</span>
                         </div>
 
-                    </div>
                 </div>
 
+                </div>
+                </a>
                 <div class="col-md-3 col-sm-6">
                     <div class="o-item bg-green">
                         <div class="oi-title">
-                            <span>Réservations mensuelles</span>
-                        </div>
-                        <div class="cb-item bg-green">
-                            <h3></h3>
+                            <span>Statistiques</span>
                         </div>
 
 
                     </div>
                 </div>
-
+                <a href="{{ path('fos_user_security_logout') }}">
                 <div class="col-md-3 col-sm-6">
                     <div class="o-item bg-bluegray">
                         <div class="oi-title">
-                            <span>Réservations totales</span>
+                            <span>Déconnexion</span>
                         </div>
-                        <div class="cb-item bg-bluegray">
-                            <h3></h3>
-                        </div>
+
 
                     </div>
                 </div>
+                </a>
             </div>
 
 

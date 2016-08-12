@@ -22,6 +22,26 @@ class ObservationManager
         return $this->getRepository()->findAll();
     }
 
+    // Trouve un visiteur/reservation
+    public function find($id)
+    {
+        $observation = $this->getRepository()->find($id);
+        if (!$observation) {
+            throw $this->createNotFoundException('Observation non trouvée');
+        }
+        return $observation;
+    }
+
+    /**
+     *
+     * Supprime une observation
+     */
+    public function remove($id)
+    {
+        $this->em->remove($this->find($id));
+        $this->em->flush();
+    }
+
     /**
      * @return \Doctrine\ORM\EntityRepository
      */

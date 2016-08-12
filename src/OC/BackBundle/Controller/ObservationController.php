@@ -19,13 +19,24 @@ class ObservationController extends Controller
     {
         $observation = new Observation();
 
+        $geoip = $this->get('maxmind.geoip')->lookup('82.249.3.94');
+        $lat = $geoip->getLatitude();
+        $long = $geoip->getLongitude();
+
+
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+
         $form = $this->createForm(ObservationType::class, $observation);
 
-        $formHandler = new ObservationFormHandler($form, $request, $this->getDoctrine()->getManager(), $observation);
+        $formHandler = new ObservationFormHandler($form, $request, $this->getDoctrine()->getManager(), $observation, $user);
 
-        if ($formHandler->process()) return $this->redirectToRoute('oc_back_homepage');
+        if ($formHandler->process()) return $this->redirectToRoute('oc_back_observations');
 
-        return $this->render('OCBackBundle:Observation:create.html.twig', array('form' => $form->createView()));
+        return $this->render('OCBackBundle:Observation:create.html.twig', array(
+            'form' => $form->createView(),
+            'lat' =>$lat,
+            'long' =>$long,
+        ));
     }
 
     /**
@@ -45,7 +56,17 @@ class ObservationController extends Controller
     {
         $observation = $this->get('oc_back_observation.manager')->find($id);
 
-        return $this->render('OCBackBundle:Observation:list.html.twig', array('observation' => $observation));
+        return $this->render('OCBackBundle:Observation:detail.html.twig', array('observation' => $observation));
+    }
+
+    /**
+     * @Route("/observation/suppression/{id}", name="oc_back_observation_delete")
+     */
+    public function deleteObservationAction($id)
+    {
+        $this->get('oc_back_observation.manager')->remove($id);
+
+        return $this->redirectToRoute('oc_back_observations');
     }
     
 }

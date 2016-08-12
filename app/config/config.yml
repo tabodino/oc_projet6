@@ -7,6 +7,7 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
+    image_directory: '%kernel.root_dir%/../web/uploads/img'
 
 framework:
     #esi:             ~
@@ -97,3 +98,7 @@ assetic:
         jsqueeze:   ~
         scssphp:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+
+# Maxmind GEO
+maxmind_geoip:
+    data_file_path: "%kernel.root_dir%/../web/GeoIPCity.dat"

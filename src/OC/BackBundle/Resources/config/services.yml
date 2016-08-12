@@ -2,3 +2,7 @@ services:
     oc_back_observation.manager:
         class: OC\BackBundle\EntityManager\ObservationManager
         arguments: ["@doctrine.orm.default_entity_manager"]
+
+    oc_back_file_uploader:
+        class: OC\BackBundle\Service\FileUploader
+        arguments: ["%image_directory%"]

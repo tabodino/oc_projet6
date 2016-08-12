@@ -1,0 +1,64 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <section id="content">
+        <div class="container">
+
+            <header class="page-header">
+                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Détail Observation</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title">Détail de l'observation</div>
+
+                            <br>
+                            <a href="{{ path('oc_back_observation_create') }}" class="btn bg-green"><i class="zmdi zmdi-plus-box"></i> Ajouter une observation</a>
+                        </div>
+
+                        <div class="t-body tb-padding">
+                            <div class="row">
+
+
+                            <div class="col-sm-6 img_bird">
+                                <img width="80%" src="{{ asset('uploads/img/'~observation.image.url) }}" alt="{{ observation.image.alt }}">
+                            </div>
+                            <div class="col-sm-6">
+                                <h2>{{ observation.title|capitalize }}</h2><br>
+                                <p class="text-justify">{{ observation.dsc }}</p>
+                            </div>
+                                <br>
+                             {# map google avec coordonnées #}
+                            <div class="col-sm-12">
+                                <iframe
+                                        width="100%"
+                                        height="450"
+                                        frameborder="0" style="border:0"
+                                        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyANBtQTfYYmlHK4ti3yxT-mmL5Kb0WJQpE
+                                        &center={{observation.latitude }},{{ observation.longitude }}&zoom=15
+                                        &maptype=satellite" allowfullscreen>
+                                </iframe>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                            <a href="{{ path('oc_back_observations') }}" class="btn btn-info center-block">Retour à la liste</a>
+                            <br>
+                            <a href="{{ path('oc_back_homepage') }}" class="btn btn-success center-block">Retour à l'accueil</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+{% endblock content %}

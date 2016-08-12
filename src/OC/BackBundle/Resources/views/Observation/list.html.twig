@@ -14,6 +14,7 @@
                     <div class="tile">
                         <div class="t-header">
                             <div class="th-title">Liste des observations</div>
+
                             <br>
                             <a href="{{ path('oc_back_observation_create') }}" class="btn bg-green"><i class="zmdi zmdi-plus-box"></i> Ajouter une observation</a>
                         </div>
@@ -22,22 +23,35 @@
                             <table class="table">
                                 <thead class="bg-cyan">
                                 <tr>
-                                    <th>N°</th>
+                                    <th>Aperçu</th>
                                     <th>Titre</th>
                                     <th>Desc.</th>
                                     <th>Date</th>
+                                    <th>Validé</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {% for observation in observations %}
+
                                     <tr>
-                                        <td>{{ loop.index }}</td>
+                                        <td>
+                                        {% if observation.image != null %}
+                                            <img class="thumb_bird" src="{{ asset('/uploads/img/'~observation.image.url) }}" width="80" alt="{{ observation.image.alt }}">
+                                        {% endif %}
+
+                                        </td>
                                         <td>{{ observation.title}}</td>
                                         <td>{{ observation.dsc }}</td>
                                         <td>{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
+                                        <td>{% if observation.validated %}
+                                                <i class="zmdi zmdi-check-circle zmdi-hc-2x"></i>
+                                            {% else %}
+                                                <i class="zmdi zmdi-close-circle mdc-text-red-700 zmdi-hc-2x "></i>
+                                            {% endif %}</td>
                                         <td>
-
+                                            <a href="{{ path('oc_back_observation_read', { 'id': observation.id}) }}" class="btn btn-success">Voir</a>
+                                            <a href="{{ path('oc_back_observation_delete', { 'id': observation.id}) }}" class="btn btn-danger">Supprimer</a>
                                         </td>
                                     </tr>
 

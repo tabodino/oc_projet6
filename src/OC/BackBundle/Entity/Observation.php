@@ -38,12 +38,6 @@ class Observation
      */
     private $dsc;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="img", type="string", length=150)
-     */
-    private $img;
 
     /**
      * @var string
@@ -79,6 +73,20 @@ class Observation
      * @ORM\Column(name="validated", type="boolean")
      */
     private $validated;
+
+    /**
+     * @ORM\OneToOne(targetEntity="OC\BackBundle\Entity\Image", cascade={"persist", "remove"})
+     * @Assert\Valid()
+     */
+    private $image;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="OC\BackBundle\Entity\User")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    protected $user;
+
+    private $taxref;
 
 
     // Constructeur
@@ -148,29 +156,6 @@ class Observation
         return $this->dsc;
     }
 
-    /**
-     * Set img
-     *
-     * @param string $img
-     *
-     * @return Observation
-     */
-    public function setImg($img)
-    {
-        $this->img = $img;
-
-        return $this;
-    }
-
-    /**
-     * Get img
-     *
-     * @return string
-     */
-    public function getImg()
-    {
-        return $this->img;
-    }
 
     /**
      * Set latitude
@@ -291,5 +276,39 @@ class Observation
     {
         return $this->validated;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+
 }
 
