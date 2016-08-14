@@ -32,6 +32,14 @@ class ObservationManager
         return $observation;
     }
 
+    public function getUnvalidatedObservation()
+    {
+        $observations = $this->getRepository()->getUnvalidatedObservation();
+        if (!$observations) throw $this->createNotFoundException('Observations non trouvées');
+
+        return $observations;
+    }
+
     /**
      *
      * Supprime une observation

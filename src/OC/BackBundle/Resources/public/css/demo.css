@@ -215,3 +215,7 @@ img.thumb_bird {
     max-height: 250px;
     overflow: hidden;
 }
+
+table th {
+    width: auto !important;
+}

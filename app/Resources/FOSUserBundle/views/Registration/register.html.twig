@@ -44,7 +44,8 @@
                                     {{ form_errors(form.email) }}
                                     {{ form_errors(form.plainPassword.first) }}
                                     {{ form_errors(form.plainPassword.second) }}
-
+                                    {{ form_errors(form.roles) }}
+                                    {{ form_errors(form) }}
 
                                 </div>
                                 <br>
@@ -56,8 +57,10 @@
                             <div class="col-sm-12">
                                 <div class='form-group control-group'>
                                     <label class="required" >Vous êtes :</label><br>
-
-                                    {{ form_widget(form.category, {'attr': {'class': 'form-control', 'placeholder': 'Votre prénom'}}) }}
+                                    <select id="fos_user_registration_form_roles_0" class="form-control" name="fos_user_registration_form[roles][0]">
+                                        <option value="ROLE_OBSERVATEUR">observateur</option>
+                                        <option value="ROLE_NATURALISTE">naturaliste</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class='col-sm-6'>

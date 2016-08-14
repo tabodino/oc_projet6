@@ -4,17 +4,16 @@
     <section id="content">
         <div class="container">
             <header class="page-header">
-                <h3>Tableau de bord</h3>
-                <p><small>Statistiques globales</small></p>
+                <h2 class="text-center">Accueil</h2>
             </header>
 
             <div class="overview row">
 
             <a href="{{ path('oc_back_observation_create') }}">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-12">
                     <div class="o-item bg-cyan">
                         <div class="oi-title">
-                            <span>Ajouter une observation</span>
+                            <span><i class="zmdi zmdi-plus zmdi-hc-2x"></i> Ajouter une observation</span>
                         </div>
 
                     </div>
@@ -22,30 +21,49 @@
                 </div>
             </a>
                 <a href="{{ path('oc_back_observations') }}">
-                <div class="col-md-3 col-sm-6">
-                    <div class="o-item bg-amber">
-                        <div class="oi-title">
-                            <span>Consulter une observation</span>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="o-item bg-amber">
+                            <div class="oi-title">
+                                <span><i class="zmdi zmdi-eye zmdi-hc-2x"></i> Consulter les observations</span>
+                            </div>
+
                         </div>
-
-                </div>
-
-                </div>
+                    </div>
                 </a>
-                <div class="col-md-3 col-sm-6">
-                    <div class="o-item bg-green">
+                {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
+
+
+                    <a href="{{ path('oc_back_observations') }}">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="o-item bg-amber">
+                                <div class="oi-title">
+                                    <span><i class="zmdi zmdi-check zmdi-hc-2x"></i> Valider les observations</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                {% endif %}
+
+
+
+
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="o-item bg-green" >
                         <div class="oi-title">
-                            <span>Statistiques</span>
+                            <span"><i class="zmdi zmdi-chart zmdi-hc-2x"></i> Statistiques</span>
                         </div>
 
 
                     </div>
                 </div>
                 <a href="{{ path('fos_user_security_logout') }}">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-12">
                     <div class="o-item bg-bluegray">
                         <div class="oi-title">
-                            <span>Déconnexion</span>
+                            <span><i class="zmdi zmdi-power-off zmdi-hc-2x"></i> Déconnexion</span>
                         </div>
 
 

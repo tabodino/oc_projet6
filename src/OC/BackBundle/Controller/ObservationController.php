@@ -8,12 +8,14 @@ use OC\BackBundle\Form\Type\ObservationType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use Symfony\Component\HttpFoundation\Request;
 
 class ObservationController extends Controller
 {
     /**
      * @Route("/observation/creation", name="oc_back_observation_create")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function createObservationAction(Request $request)
     {
@@ -41,6 +43,7 @@ class ObservationController extends Controller
 
     /**
      * @Route("/observations", name="oc_back_observations")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function listObservationAction()
     {
@@ -51,6 +54,7 @@ class ObservationController extends Controller
 
     /**
      * @Route("/observation/detail/{id}", name="oc_back_observation_read")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function detailObservationAction($id)
     {
@@ -61,12 +65,24 @@ class ObservationController extends Controller
 
     /**
      * @Route("/observation/suppression/{id}", name="oc_back_observation_delete")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function deleteObservationAction($id)
     {
         $this->get('oc_back_observation.manager')->remove($id);
 
         return $this->redirectToRoute('oc_back_observations');
+    }
+
+    /**
+     * @Route("/observations/invalides", name="oc_back_invalidated_observations")
+     * @Cache(expires="tomorrow", public=true)
+     */
+    public function invalidatedObservationAction()
+    {
+        $observations = $this->get('oc_back_observation.manager')->getUnvalidatedObservation();
+
+        return $this->render('OCBackBundle:Observation:invalidated.html.twig', array('observations' => $observations));
     }
     
 }

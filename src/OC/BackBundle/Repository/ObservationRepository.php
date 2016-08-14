@@ -10,4 +10,18 @@ namespace OC\BackBundle\Repository;
  */
 class ObservationRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getUnvalidatedObservation()
+    {
+        $qb = $this->createQueryBuilder('o')
+            ->select('o')
+          //  ->join('o.user', 'u')
+           // ->join('o.image', 'i')
+          //  ->where('u.id = o.user')
+          //  ->andWhere('o.image = i.id')
+            ->where('o.validated = 0')
+        ;
+
+        return $qb->getQuery()->getResult();
+    }
+
 }

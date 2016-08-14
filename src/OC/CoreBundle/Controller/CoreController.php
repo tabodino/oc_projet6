@@ -6,6 +6,7 @@ use OC\CoreBundle\Form\Handler\ContactFormHandler;
 use OC\CoreBundle\Form\Type\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -13,6 +14,7 @@ class CoreController extends Controller
 {
     /**
      * @Route("/", name="oc_core_accueil")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function indexAction()
     {
@@ -21,6 +23,7 @@ class CoreController extends Controller
 
     /**
      * @Route("/contact", name="oc_core_contact")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function contactAction(Request $request)
     {
@@ -37,6 +40,7 @@ class CoreController extends Controller
 
     /**
      * @Route("/especes", name="oc_core_especes")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function speciesAction()
     {
@@ -48,6 +52,7 @@ class CoreController extends Controller
 
     /**
      * @Route("/detail_espece/{order}", name="oc_core_details_espece")
+     * @Cache(expires="tomorrow", public=true)
      */
     public function detailSpeciesAction($order)
     {
@@ -55,6 +60,16 @@ class CoreController extends Controller
         $orders = $this->get('oc_core_taxref.manager')->getTaxrefSpeciesByOrder($order);
 
         return $this->render('OCCoreBundle:Core:detailSpecies.html.twig', array('orders' => $orders, 'order' => $order));
+    }
+
+
+    /**
+     * @Route("/detail_observation/{id}", name="oc_core_details_observation")
+     * @Cache(expires="tomorrow", public=true)
+     */
+    public function detailObservationAction($id)
+    {
+        return $this->render('OCCoreBundle:Core:detailObservation.html.twig');
     }
     
 }

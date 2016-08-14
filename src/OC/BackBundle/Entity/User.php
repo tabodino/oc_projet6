@@ -38,14 +38,6 @@ class User extends BaseUser
 
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="category", type="string", length=150)
-     */
-    protected $category;
-
-
-    /**
      * Get id
      *
      * @return int
@@ -113,27 +105,4 @@ class User extends BaseUser
         return $this->lastname;
     }
 
-    /**
-     * Set category
-     *
-     * @param string $category
-     *
-     * @return User
-     */
-    public function setCategory($category)
-    {
-        $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * Get category
-     *
-     * @return string
-     */
-    public function getCategory()
-    {
-        return $this->category;
-    }
 }

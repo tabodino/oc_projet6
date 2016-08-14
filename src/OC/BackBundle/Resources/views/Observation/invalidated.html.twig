@@ -6,14 +6,14 @@
         <div class="container">
 
             <header class="page-header">
-                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Observations</h3>
+                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Observations non validées</h3>
             </header>
 
             <div class="row">
                 <div class="col-sm-12">
                     <div class="tile">
                         <div class="t-header">
-                            <div class="th-title">Liste des observations</div>
+                            <div class="th-title">Liste des observations invalidées</div>
 
                             <br>
                             <a href="{{ path('oc_back_observation_create') }}" class="btn bg-green"><i class="zmdi zmdi-plus-box"></i> Ajouter une observation</a>
@@ -27,30 +27,28 @@
                                     <th>Titre</th>
                                     <th>Desc.</th>
                                     <th>Date</th>
-                                    <th>Validé</th>
+                                    <th>Auteur</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 {% for observation in observations %}
 
+
+
                                     <tr>
-                                        <td>
-                                        {% if observation.image != null %}
-                                            <img class="thumb_bird" src="{{ asset('/uploads/img/'~observation.image.url) }}" width="80" alt="{{ observation.image.alt }}">
-                                        {% endif %}
+                                       <td>
+                                           {#  {% if observation.image != null %}
+                                                 <img class="thumb_bird" src="{{ asset('/uploads/img/'~observation.image.url) }}" width="80" alt="{{ observation.image.alt }}">
+                                             {% endif %}#}
 
                                         </td>
                                         <td>{{ observation.title}}</td>
                                         <td>{{ observation.dsc }}</td>
                                         <td>{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
-                                        <td>{% if observation.validated %}
-                                                <i class="zmdi zmdi-check-circle zmdi-hc-2x"></i>
-                                            {% else %}
-                                                <i class="zmdi zmdi-close-circle mdc-text-red-700 zmdi-hc-2x "></i>
-                                            {% endif %}</td>
+                                        <td></td>
                                         <td>
-                                            <a href="{{ path('oc_back_observation_read', { 'id': observation.id}) }}" class="btn btn-success">Voir</a>
+                                            <a href="{{ path('oc_back_observation_read', { 'id': observation.id}) }}" class="btn btn-success">Valider</a>
                                             <a href="{{ path('oc_back_observation_delete', { 'id': observation.id}) }}" class="btn btn-danger">Supprimer</a>
                                         </td>
                                     </tr>

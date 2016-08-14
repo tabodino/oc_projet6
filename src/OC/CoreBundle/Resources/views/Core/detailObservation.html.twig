@@ -1,0 +1,408 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block title %}Détails Espèces{% endblock title %}
+
+{% block body %}
+
+    <div id='main' role='main'>
+        <div id='main-content-header'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <h1 class='title'>Détail des espèces</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='main-content'>
+            <div class='container'>
+
+                <div class='row'>
+                    <div class='col-sm-12'>
+                       <div id='main-content'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-push-9 col-sm-push-8 col-sm-4 col-md-3'>
+
+
+<nav class='sidebar'>
+    <div class="button-wrapper sidebar-toggle">
+        <button class='btn btn-block btn-contrast' data-target='.sidebar-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+        </button>
+    </div>
+    <div class='sidebar-collapse collapse'>
+        <div class="box sidebar-widget"><h3 class="title">Rechercher</h2>
+
+
+<form id="searchform" action="http://holobest.com/jednotka/" method="get" role="search" >
+    <div class='input-group'>
+        <input type="text" class='form-control' name="s" id="s" placeholder="Recherche..." value="" />
+          <span class='input-group-btn'>
+              <div class="button-wrapper">
+                  <input class="btn" type="submit" id="searchsubmit" value="" />
+                  <i class='fa-icon-search'></i>
+              </div>
+          </span>
+    </div>
+</form></div><div class="box sidebar-widget"><h3 class="title">Categories</h2><div class="list-group">
+            <a class="list-group-item" href="{{ asset('uploads/img/fixture.png') }}"><i class='fa-icon-angle-right fa-icon-fixed-width'></i>
+                <span>Adisciping elementum</span>
+            </a>
+
+
+            <a class="list-group-item" href="http://holobest.com/jednotka?cat=8"><i class='fa-icon-angle-right fa-icon-fixed-width'></i>
+                <span>Etiam bibendum</span>
+            </a>
+
+
+            <a class="list-group-item" href="http://holobest.com/jednotka?cat=11"><i class='fa-icon-angle-right fa-icon-fixed-width'></i>
+                <span>Magna dui</span>
+            </a>
+
+
+            <a class="list-group-item" href="http://holobest.com/jednotka?cat=10"><i class='fa-icon-angle-right fa-icon-fixed-width'></i>
+                <span>Mauris gravida</span>
+            </a>
+
+
+            <a class="list-group-item" href="http://holobest.com/jednotka?cat=7"><i class='fa-icon-angle-right fa-icon-fixed-width'></i>
+                <span>Quisque et fringilla</span>
+            </a>
+
+
+            <a class="list-group-item" href="http://holobest.com/jednotka?cat=9"><i class='fa-icon-angle-right fa-icon-fixed-width'></i>
+                <span>Vestibulum</span>
+            </a>
+
+        </div></div>
+        <div class="box sidebar-widget">
+        {#<div class="flickr-widget widget">
+            <h3 class="title">Photos on flickr</h2>
+            <div class="flickr-images clearfix">
+                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=51301326@N04"></script>
+
+                <div class="clear"></div>
+            </div><!-- end .flickr -->
+        </div><!-- end .widgets-col-flickr -->#}
+        </div>
+
+           </div>
+</nav>
+                </div>
+
+                <div class='col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9'>
+                    <div class='text-boxes portfolio-boxes blog-posts'>
+
+
+                                <div class='row text-box text-box-title-above'>
+                                    <div class='col-sm-12'>
+                                        <h2 class='title'><a href="http://holobest.com/jednotka/?p=216">Aliquam congue porttitor vulputate</a></h2>
+
+                                        <div class='toolbar'>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?m=20131114'>
+                                                <i class='fa-icon-calendar-empty'></i>
+                                                <span>Nov 14, 2013</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?author=2'>
+                                                <i class='fa-icon-user'></i>
+                                                <span>andrei holobut</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?p=216#comments'>
+                                                <i class='fa-icon-comments'></i>
+                                                <span>5 comments</span>
+                                            </a>
+                                        </div>
+
+                                        <div class='row'>
+
+
+                                            <div class='col-sm-3 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                <a class="thumbnail-hover" href="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-598931-close-up-of-ripe-wheat-ears-m.jpg">
+                                                    <div class='image-link'>
+                                                        <i class='fa-icon-search'></i>
+
+                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-598931-close-up-of-ripe-wheat-ears-m-189x129.jpg" alt="">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class='col-sm-9'>
+                                                <p><p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo. Lorem ipsum dolor&#8230;</p>
+</p>
+                                                <a class='btn btn-contrast btn-bordered btn-xs' href='http://holobest.com/jednotka/?p=216'>Read more</a>
+                                            </div>
+                                        </div>
+
+                                        <hr class='hr-half'>
+                                    </div>
+                                </div>
+
+
+                                <div class='row text-box text-box-title-above'>
+                                    <div class='col-sm-12'>
+                                        <h2 class='title'><a href="http://holobest.com/jednotka/?p=213">Phasellus rutrum augue nec</a></h2>
+
+                                        <div class='toolbar'>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?m=20131114'>
+                                                <i class='fa-icon-calendar-empty'></i>
+                                                <span>Nov 14, 2013</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?author=2'>
+                                                <i class='fa-icon-user'></i>
+                                                <span>andrei holobut</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?p=213#comments'>
+                                                <i class='fa-icon-comments'></i>
+                                                <span>0 comments</span>
+                                            </a>
+                                        </div>
+
+                                        <div class='row'>
+
+
+                                            <div class='col-sm-3 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                <a class="thumbnail-hover" href="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-3598692-my-move-m.jpg">
+                                                    <div class='image-link'>
+                                                        <i class='fa-icon-search'></i>
+
+                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-3598692-my-move-m-189x129.jpg" alt="">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class='col-sm-9'>
+                                                <p><p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo. Lorem ipsum dolor&#8230;</p>
+</p>
+                                                <a class='btn btn-contrast btn-bordered btn-xs' href='http://holobest.com/jednotka/?p=213'>Read more</a>
+                                            </div>
+                                        </div>
+
+                                        <hr class='hr-half'>
+                                    </div>
+                                </div>
+
+
+                                <div class='row text-box text-box-title-above'>
+                                    <div class='col-sm-12'>
+                                        <h2 class='title'><a href="http://holobest.com/jednotka/?p=210">Aliquam congue porttitor</a></h2>
+
+                                        <div class='toolbar'>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?m=20131114'>
+                                                <i class='fa-icon-calendar-empty'></i>
+                                                <span>Nov 14, 2013</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?author=2'>
+                                                <i class='fa-icon-user'></i>
+                                                <span>andrei holobut</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?p=210#comments'>
+                                                <i class='fa-icon-comments'></i>
+                                                <span>6 comments</span>
+                                            </a>
+                                        </div>
+
+                                        <div class='row'>
+
+
+                                            <div class='col-sm-3 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                <a class="thumbnail-hover" href="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-4347985-choose-direction-m.jpg">
+                                                    <div class='image-link'>
+                                                        <i class='fa-icon-search'></i>
+
+                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-4347985-choose-direction-m-189x129.jpg" alt="">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class='col-sm-9'>
+                                                <p><p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo. Lorem ipsum dolor&#8230;</p>
+</p>
+                                                <a class='btn btn-contrast btn-bordered btn-xs' href='http://holobest.com/jednotka/?p=210'>Read more</a>
+                                            </div>
+                                        </div>
+
+                                        <hr class='hr-half'>
+                                    </div>
+                                </div>
+
+
+                                <div class='row text-box text-box-title-above'>
+                                    <div class='col-sm-12'>
+                                        <h2 class='title'><a href="http://holobest.com/jednotka/?p=207">Lorem ipsum dolor sit amet</a></h2>
+
+                                        <div class='toolbar'>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?m=20131114'>
+                                                <i class='fa-icon-calendar-empty'></i>
+                                                <span>Nov 14, 2013</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?author=2'>
+                                                <i class='fa-icon-user'></i>
+                                                <span>andrei holobut</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?p=207#comments'>
+                                                <i class='fa-icon-comments'></i>
+                                                <span>0 comments</span>
+                                            </a>
+                                        </div>
+
+                                        <div class='row'>
+
+
+                                            <div class='col-sm-3 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                <a class="thumbnail-hover" href="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-2190388-man-using-graphics-tablet-m.jpg">
+                                                    <div class='image-link'>
+                                                        <i class='fa-icon-search'></i>
+
+                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-2190388-man-using-graphics-tablet-m-189x129.jpg" alt="">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class='col-sm-9'>
+                                                <p><p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo. Lorem ipsum dolor&#8230;</p>
+</p>
+                                                <a class='btn btn-contrast btn-bordered btn-xs' href='http://holobest.com/jednotka/?p=207'>Read more</a>
+                                            </div>
+                                        </div>
+
+                                        <hr class='hr-half'>
+                                    </div>
+                                </div>
+
+
+                                <div class='row text-box text-box-title-above'>
+                                    <div class='col-sm-12'>
+                                        <h2 class='title'><a href="http://holobest.com/jednotka/?p=203">Phasellus rutrum augue nec</a></h2>
+
+                                        <div class='toolbar'>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?m=20131114'>
+                                                <i class='fa-icon-calendar-empty'></i>
+                                                <span>Nov 14, 2013</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?author=2'>
+                                                <i class='fa-icon-user'></i>
+                                                <span>andrei holobut</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?p=203#comments'>
+                                                <i class='fa-icon-comments'></i>
+                                                <span>0 comments</span>
+                                            </a>
+                                        </div>
+
+                                        <div class='row'>
+
+
+                                            <div class='col-sm-3 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                <a class="thumbnail-hover" href="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-621190-blueberries-l.jpg">
+                                                    <div class='image-link'>
+                                                        <i class='fa-icon-search'></i>
+
+                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-621190-blueberries-l-189x129.jpg" alt="">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class='col-sm-9'>
+                                                <p><p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo. Lorem ipsum dolor&#8230;</p>
+</p>
+                                                <a class='btn btn-contrast btn-bordered btn-xs' href='http://holobest.com/jednotka/?p=203'>Read more</a>
+                                            </div>
+                                        </div>
+
+                                        <hr class='hr-half'>
+                                    </div>
+                                </div>
+
+
+                                <div class='row text-box text-box-title-above'>
+                                    <div class='col-sm-12'>
+                                        <h2 class='title'><a href="http://holobest.com/jednotka/?p=1">Cras tempus ligula a tempor adipiscing</a></h2>
+
+                                        <div class='toolbar'>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?m=20131114'>
+                                                <i class='fa-icon-calendar-empty'></i>
+                                                <span>Nov 14, 2013</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?author=1'>
+                                                <i class='fa-icon-user'></i>
+                                                <span>adrianholobut</span>
+                                            </a>
+                                            <a class='btn btn-link' href='http://holobest.com/jednotka/?p=1#comments'>
+                                                <i class='fa-icon-comments'></i>
+                                                <span>1 comments</span>
+                                            </a>
+                                        </div>
+
+                                        <div class='row'>
+
+
+                                            <div class='col-sm-3 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                <a class="thumbnail-hover" href="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-746593-compass-on-leaves-of-cane-m.jpg">
+                                                    <div class='image-link'>
+                                                        <i class='fa-icon-search'></i>
+
+                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="http://holobest.com/jednotka/wp-content/uploads/2013/11/photodune-746593-compass-on-leaves-of-cane-m-189x129.jpg" alt="">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class='col-sm-9'>
+                                                <p><p>Aliquam erat volutpat. Duis viverra at erat ut semper. In purus nisl, luctus sed eleifend at, pellentesque ut dolor. Nunc sodales nisi sed ullamcorper pellentesque. Etiam posuere nulla eu lectus porta ullamcorper. Aenean sit amet lectus eget augue euismod ultricies eu nec risus. Vivamus hendrerit nisi commodo. Lorem ipsum dolor&#8230;</p>
+</p>
+                                                <a class='btn btn-contrast btn-bordered btn-xs' href='http://holobest.com/jednotka/?p=1'>Read more</a>
+                                            </div>
+                                        </div>
+
+                                        <hr class='hr-half'>
+                                    </div>
+                                </div>
+
+
+                    </div>
+
+
+<div class="text-center">
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='fade' id='scroll-to-top'>
+        <i class='fa-icon-chevron-up'></i>
+    </div>
+</div> <!--<div id='main' role='main'>-->
+                        <div class='row'>
+                            <div class='col-sm-12'>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class='fade' id='scroll-to-top'>
+            <i class='fa fa-chevron-up'></i>
+        </div>
+    </div>
+
+{% endblock body %}
