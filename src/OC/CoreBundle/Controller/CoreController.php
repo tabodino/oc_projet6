@@ -140,16 +140,15 @@ class CoreController extends Controller
     }
 
     /**
-     * @Route("/map/{test}", name="map")
+     * @Route("/map/{lands}", name="map")
      */
-    public function mapAction($test)
+    public function mapAction($lands)
     {
         $countries = $this->get('oc_core_codecountry.manager')->findAll();
-       // $params = $this->$request->query->get('params');
 
         return $this->render('OCCoreBundle:Core:map.html.twig', array(
             'countries' => $countries,
-            'test' => $test
+            'lands' => $lands
         ));
     }
 

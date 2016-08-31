@@ -9,13 +9,9 @@
     #map { height: 100%; }
 </style>
 
-
-{% set param = test|split('=') %}
-
-
+{% set param = lands|split('=') %}
 
 <div id="map"></div>
-
 
 <script type="text/javascript">
 
@@ -46,25 +42,6 @@
             {% endfor %}
         {% endfor %}
 
-      /*  marker = new google.maps.Marker({
-            map: map,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            position: {lat: 46.227638, lng: 2.213749},
-            title: "poilu"
-        });*/
-
-       /** marker2 = new google.maps.Marker({
-            map: map,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            position: {lat: 10.283333, lng: -109.216667},
-            title: "hello"
-        });*/
-
-
-
-
         marker.addListener('click', function() {
             var infowindow = new google.maps.InfoWindow({
                 content:'<div id="content">'+this.title+'</div>'
@@ -74,13 +51,6 @@
         });
     }
 
-   /* function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-            marker.setAnimation(null);
-        } else {
-            marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-    }*/
 
 
 

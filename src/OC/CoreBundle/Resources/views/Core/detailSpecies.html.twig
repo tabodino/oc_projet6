@@ -50,135 +50,60 @@
                                                         </div>
                                                     </form>
                                                 </div>
-
-
-
                                             </div>
                                         </nav>
                                     </div>
 
                                     <div class='col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9'>
                                         <div class='text-boxes portfolio-boxes blog-posts'>
-
-
                                                 <div class='row text-box text-box-title-above'>
                                                     <div class='col-sm-12'>
-
                                                         <h2 class='title'>{{ species.nomVern|capitalize }}</a></h2>
-
-                                                            <h3><strong>Famille</strong> {{ species.famille }}</h3>
-                                                            <h3><strong>Ordre</strong> {{ species.ordre }}</h3>
-                                                            <h3><strong>Lb Auteur</strong> {{ species.lbAuteur }}</h3>
-
-
-                                                            <h3><strong>Lb Nom</strong> {{ species.lbNom }}</h3>
-                                                            <h3><strong>Nom complet</strong> {{ species.nomComplet }}</h3>
-                                                            <h3><strong>Nom Vern Eng</strong> {{ species.nomVernEng }}</h3>
-                                                        </div>
+                                                        <h3><strong>Famille</strong> {{ species.famille }}</h3>
+                                                        <h3><strong>Ordre</strong> {{ species.ordre }}</h3>
+                                                        <h3><strong>Lb Auteur</strong> {{ species.lbAuteur }}</h3>
+                                                        <h3><strong>Lb Nom</strong> {{ species.lbNom }}</h3>
+                                                        <h3><strong>Nom complet</strong> {{ species.nomComplet }}</h3>
+                                                        <h3><strong>Nom Vern Eng</strong> {{ species.nomVernEng }}</h3>
                                                     </div>
-
-
                                                 </div>
+                                        </div>
 
-                                            <div class='page-header page-header-with-icon'>
-                                                <i class='fa fa-map'></i>
-                                                <h2>
-                                                    Localisation
-                                                </h2>
-                                            </div>
+                                        <div class='page-header page-header-with-icon'>
+                                            <i class='fa fa-map'></i>
+                                            <h2> Localisation</h2>
+                                        </div>
 
                                         {% set countries = { 'fr': species.fr, 'gf': species.gf, 'mar': species.mar,
                                         'gua': species.gua, 'sm': species.sm, 'sb': species.sb, 'spm': species.spm,
                                         'may': species.may, 'reu': species.reu, 'taaf': species.taaf, 'nc': species.nc,
                                         'wf':species.wf, 'pf': species.pf, 'cli': species.cli} %}
 
-                                        {% set params = [] %}
                                         {% set lands = "" %}
+
                                         {% for key, country in countries %}
                                             {% if country != "" %}
-                                                {% set params = params|merge([key]) %}
                                                 {% set lands = lands~key~"+" %}
                                             {% endif %}
                                         {% endfor %}
 
+                                        <iframe width="100%" height="400" src="{{ path('map', {'lands': lands|url_encode})}}" frameborder="0"> </iframe>
 
-                                        <iframe width="600" height="400" src="{{ path('map', {'test': lands|url_encode})}}" frameborder="0">
-
-                                        </iframe>
-
-                                      {# <div id="map" height="100%">
-
-                                        </div>
-                                        <script type="text/javascript">
-                                            var map;
-                                            function initMap() {
-                                                alert('map');
-                                                map = new google.maps.Map(document.getElementById('map'), {
-                                                    center: {lat: -34.397, lng: 150.644},
-                                                    zoom: 8
-                                                });
-                                            }
-
-
-                                        </script>
-                                        <script async defer
-                                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxtGKtso3diW1CFC3PKvhr2omLBTEaIjM&callback=initMap">
-                                        </script>#}
-
-
-                                        <div class='row portfolio-boxes'>
-
-
-                                                <div>
-
-                                                {#   <iframe width="300" height="450" frameborder="0" style="border:0"
-                                                            src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-&markers=color:red%7Clabel:C%7C40.718217,-73.998284
-&key=AIzaSyCxtGKtso3diW1CFC3PKvhr2omLBTEaIjM" allowfullscreen>
-
-                                                    </iframe>#}
-
-                                                    {#{% if species.fr != "" %}
-                                                        <iframe width="100%" height="300" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANBtQTfYYmlHK4ti3yxT-mmL5Kb0WJQpE
-                                                        &q=France&zoom=2
-                                                        &maptype=satellite" allowfullscreen>
-
-                                                        </iframe>
-                                                    {% elseif species.nc != "" %}
-                                                        <iframe width="100%" height="300" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANBtQTfYYmlHK4ti3yxT-mmL5Kb0WJQpE
-                                                            &q=Guyanne-Francaise&zoom=2
-                                                            &maptype=satellite" allowfullscreen>
-
-                                                        </iframe>
-
-                                                    {% else %}
-
-                                                    {% endif %}#}
-
-
-
-
-
-                                                </div>
-                                                <br>
-                                            </div>
-
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class='fade' id='scroll-to-top'>
-                            <i class='fa fa-icon-chevron-up'></i>
-                        </div>
-
+                    <div class='fade' id='scroll-to-top'>
+                        <i class='fa fa-icon-chevron-up'></i>
                     </div>
 
                 </div>
+
             </div>
         </div>
+    </div>
 
 
 {% endblock body %}
