@@ -9,9 +9,10 @@
     #map { height: 100%; }
 </style>
 
-{% set param = lands|split('=') %}
+{% set param = lands|split('+') %}
 
 <div id="map"></div>
+
 
 <script type="text/javascript">
 
@@ -26,6 +27,7 @@
         });
 
         {% for p in param %}
+             // Au cas où urlencode
             {% for a in p|split('&') %}
                 {% for c in countries %}
                     {% if a|upper == c.code %}
@@ -42,6 +44,7 @@
             {% endfor %}
         {% endfor %}
 
+
         marker.addListener('click', function() {
             var infowindow = new google.maps.InfoWindow({
                 content:'<div id="content">'+this.title+'</div>'
@@ -50,8 +53,6 @@
 
         });
     }
-
-
 
 
 </script>
