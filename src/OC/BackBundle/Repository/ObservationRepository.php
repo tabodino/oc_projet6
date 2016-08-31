@@ -14,14 +14,45 @@ class ObservationRepository extends \Doctrine\ORM\EntityRepository
     {
         $qb = $this->createQueryBuilder('o')
             ->select('o')
-          //  ->join('o.user', 'u')
-           // ->join('o.image', 'i')
-          //  ->where('u.id = o.user')
-          //  ->andWhere('o.image = i.id')
             ->where('o.validated = 0')
         ;
 
         return $qb->getQuery()->getResult();
     }
 
+    public function getValidatedObservation()
+    {
+        $qb = $this->createQueryBuilder('o')
+            ->select('o')
+            ->where('o.validated = 1')
+        ;
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function findValidatedObservation($id)
+    {
+        $qb = $this->createQueryBuilder('o')
+            ->select('o')
+            ->where('o.validated = 1')
+            ->andWhere('o.id = :id')
+            ->setParameter('id', $id)
+        ;
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function searchObservation($keyword)
+    {
+        $qb = $this->createQueryBuilder('o')
+            ->select('o')
+            ->where('o.validated = 1')
+            ->andWhere('o.title LIKE :keyword')
+            ->orWhere('o.dsc LIKE :keyword')
+            ->setParameter('keyword', $keyword.'%')
+            ->setMaxResults(20)
+        ;
+
+        return $qb->getQuery()->getResult();
+    }
 }

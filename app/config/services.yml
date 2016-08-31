@@ -8,3 +8,9 @@ services:
         class: OC\BackBundle\Form\Type\RegistrationFormType
         tags:
             - { name: form.type, alias: app_user_registration }
+
+    country.twig_extension:
+            class: OC\CoreBundle\Twig\CountryExtension
+            public: false
+            tags:
+                - { name: twig.extension }

@@ -19,7 +19,7 @@
 
         <link rel="stylesheet" href="{{ asset('bundles/ocback/css/sweet-alert.css') }}" >
 
-        <link rel="stylesheet" href="{{ asset('bundles/ocback/css/app.min.css') }}" >
+        <link rel="stylesheet" href="{{ asset('bundles/ocback/css/app.css') }}" >
         <link rel="stylesheet" href="{{ asset('bundles/ocback/css/demo.css') }}" >
 
     {% endblock stylesheets %}
@@ -79,7 +79,7 @@
                 //alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
 
             function successCallback(position){
-                alert("Latitude : " + position.coords.latitude + ", longitude : " + position.coords.longitude);
+               console.log("Latitude : " + position.coords.latitude + ", longitude : " + position.coords.longitude);
             };
 
             function errorCallback(error){
@@ -101,12 +101,7 @@
 
     {% endblock javascripts_body %}
 
-    {% block custom_script %}
-
-
-
-
-    {% endblock custom_script %}
+    {% block custom_script %}{% endblock custom_script %}
 
 
 

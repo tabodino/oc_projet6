@@ -6627,10 +6627,11 @@ h1 .label, h2 .label, h3 .label, h4 .label, h5 .label, h6 .label {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 10px 15px;
+    padding:  10px 0px 10px 20px;
     width: auto;
-    margin: 0 -21px 20px;
+    /*margin: 0 -21px 20px;*/
 }
+
 .poi-percent, .poi-title {
     width: 100%;
     text-align: center;

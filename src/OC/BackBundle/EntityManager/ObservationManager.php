@@ -32,10 +32,43 @@ class ObservationManager
         return $observation;
     }
 
+    public function findValidatedObservation($id)
+    {
+        $observation = $this->getRepository()->findValidatedObservation($id);
+
+        if (!$observation) throw $this->createNotFoundException('Observation non trouvée');
+
+        return $observation;
+    }
+
     public function getUnvalidatedObservation()
     {
         $observations = $this->getRepository()->getUnvalidatedObservation();
+        //if (!$observations) throw $this->createNotFoundException('Observations non trouvées');
+
+        return $observations;
+    }
+
+    public function getValidatedObservation()
+    {
+        $observations = $this->getRepository()->getValidatedObservation();
         if (!$observations) throw $this->createNotFoundException('Observations non trouvées');
+
+        return $observations;
+    }
+
+    public function getAllOrderTaxref()
+    {
+        $orders = $this->em->getRepository('OCCoreBundle:Taxref')->getAllOrderTaxref();
+
+        return $orders;
+    }
+
+
+    public function searchObservation($keyword)
+    {
+        $observations = $this->getRepository()->searchObservation($keyword);
+        //if (!$observations) throw $this->createNotFoundException('Observations non trouvées');
 
         return $observations;
     }

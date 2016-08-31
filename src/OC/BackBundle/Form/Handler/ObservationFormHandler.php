@@ -40,38 +40,22 @@ class ObservationFormHandler
         return false;
     }
 
+
     public function onSuccess()
     {
         $observation = $this->form->getData();
 
         $observation->setUser($this->user);
 
-       // $file = $this->observation->getImage()
-       // ;
+        if ($this->user->hasRole("ROLE_NATURALISTE"))
 
-        //$fileName = md5(uniqid()).'.'.$this->guessExtension();
-
-        //$file->move(
-          //  '/../web/uploads/img',
-          //  $fileName
-       // );
-
-        //var_dump($this->observation->getImage()->getFile());
-
-        //$file = $this->observation->getImage()->getFile();
-
-       // $fileUploader = new FileUploader('%image_directory%');
-
-       // $fileName = $fileUploader->upload($file);
-
-      // $this->observation->setImage($file);
-
-
+            $observation->setValidated(1);
 
         $this->em->persist($observation);
 
         $this->em->flush();
     }
+
 
     /**
      * @return Form

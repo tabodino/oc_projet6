@@ -33,9 +33,9 @@
                 {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
 
 
-                    <a href="{{ path('oc_back_observations') }}">
+                    <a href="{{ path('oc_back_invalidated_observations') }}">
                         <div class="col-md-3 col-sm-12">
-                            <div class="o-item bg-amber">
+                            <div class="o-item bg-red">
                                 <div class="oi-title">
                                     <span><i class="zmdi zmdi-check zmdi-hc-2x"></i> Valider les observations</span>
                                 </div>

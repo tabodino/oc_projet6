@@ -1,0 +1,109 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block title %}Résultats observations{% endblock title %}
+
+{% block body %}
+
+    <div id='main' role='main'>
+        <div id='main-content-header'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <h1 class='title'>Résultat des observations</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id='main-content'>
+            <div class='container'>
+
+                <div class='row'>
+                    <div class='col-sm-12'>
+
+                        <form class="mg-b" method="get" action="{{ path('oc_core_result_observation') }}">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="keyword" placeholder="Rechercher...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-contrast" type="submit">
+                                     <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                      <div class='col-md-12'>
+                        <div class='text-boxes portfolio-boxes blog-posts'>
+                            {% if observations != null %}
+                                {% for observation in observations %}
+                                    <div class='row text-box text-box-title-above'>
+                                        <div class='col-sm-12'>
+                                            <h2 class='title'> <a href="{{ path('oc_core_details_observation', { 'id': observation.id }) }}">{{ observation.title|capitalize }}</a></h2>
+
+                                                <div class='toolbar'>
+                                                    <a class='btn btn-link' href='#'>
+                                                        <i class='fa-icon-calendar-empty'></i>
+                                                        <span><i class="fa fa-calendar"></i> {{ observation.createdAt|date('d/m/Y') }}</span>
+                                                    </a>
+                                                    <a class='btn btn-link' href=''>
+                                                         <i class='fa-icon-user'></i>
+                                                         <span><i class="fa fa-user"></i> {{ observation.user.firstname|capitalize }} {{ observation.user.lastname|capitalize }}</span>
+                                                    </a>
+
+                                                </div>
+
+                                                <div class='row'>
+
+                                                    <div class='col-sm-4 portfolio-box portfolio-filter-photography portfolio-item'>
+                                                        <a class="thumbnail-hover" href="">
+                                                            <div class='image-link'>
+                                                                <i class='fa-icon-search'></i>
+                                                                    <a href="{{ path('oc_core_details_observation', { 'id': observation.id }) }}">
+                                                                        <img class="img-responsive center-block img-rounded-half" width="189" height="129" src="{{ asset('uploads/img/'~observation.image.url) }}" alt="{{ observation.image.alt }}">
+                                                                    </a>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class='col-sm-8'>
+                                                        <p>{{ observation.dsc }}</p>
+                                                        <a class='btn btn-success' href='{{ path('oc_core_details_observation', { 'id': observation.id }) }}'>En savoir plus</a>
+                                                    </div>
+                                                </div>
+
+                                                <hr class='hr-half'>
+                                            </div>
+                                        </div>
+                                            {% endfor %}
+                                            {% else %}
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h2 class="text-center">Désolé, aucune observation n'a été trouvée.</h2>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+
+                        <div class='fade' id='scroll-to-top'>
+                            <i class='fa fa-icon-chevron-up'></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

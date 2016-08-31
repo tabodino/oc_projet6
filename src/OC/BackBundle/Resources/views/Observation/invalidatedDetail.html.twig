@@ -1,0 +1,97 @@
+{% extends "OCBackBundle::layout.html.twig" %}
+
+{% block content %}
+
+    <section id="content">
+        <div class="container">
+
+            <header class="page-header">
+                <h3><a href="{{ path('oc_back_homepage') }}">Accueil</a> / Détail Observation à valider</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="tile">
+                        <div class="t-header">
+                            <div class="th-title">Détail de l'observation à valider</div>
+                            <br>
+                        <div class="t-body tb-padding">
+                            <div class="row">
+
+
+                                <div class="col-sm-6 img_bird">
+                                    <img width="80%" src="{{ asset('uploads/img/'~observation.image.url) }}" alt="{{ observation.image.alt }}">
+                                    <br>
+                                </div>
+                                <div class="col-sm-6">
+                                    <iframe
+                                            width="100%"
+                                            height="100%"
+                                            frameborder="0" style="border:0"
+                                            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyANBtQTfYYmlHK4ti3yxT-mmL5Kb0WJQpE
+                                        &center={{observation.latitude }},{{ observation.longitude }}&zoom=15
+                                        &maptype=satellite" allowfullscreen>
+                                    </iframe>
+
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <br>
+                                {# map google avec coordonnées #}
+                                <div class="col-sm-12">
+                                    <h2>{{ observation.title|capitalize }}</h2><br>
+                                    <p class="text-justify">{{ observation.dsc }}</p>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <form action="" method="post">
+                                    <div class='form-group control-group'>
+                                        <label for="">Renseignez l'ordre de l'espèce</label>
+                                        <select name="ordre" class="form-control" id="" required="required">
+                                            <option value="">Choisissez un ordre</option>
+                                            {% for order in orders %}
+                                                <option value="{{ order.ordre }}">{{ order.ordre }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+
+                                    <div class='form-group control-group'>
+                                        <input type="submit" class="btn btn-success" value="Valider">
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="{{ path('oc_back_homepage') }}" class="btn btn-success center-block">Retour à l'accueil</a>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="{{ path('oc_back_observations') }}" class="btn btn-info center-block">Retour à la liste</a>
+                    </div>
+
+                    <br>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+    </section>
+
+{% endblock content %}

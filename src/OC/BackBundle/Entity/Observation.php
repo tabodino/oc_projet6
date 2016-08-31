@@ -76,6 +76,7 @@ class Observation
 
     /**
      * @ORM\OneToOne(targetEntity="OC\BackBundle\Entity\Image", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=true)
      * @Assert\Valid()
      */
     private $image;
@@ -86,7 +87,17 @@ class Observation
      */
     protected $user;
 
-    private $taxref;
+    //order => nom reservé;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ordre", type="string", length=50)
+     */
+    private $ordre;
+
+   
+
 
 
     // Constructeur
@@ -95,6 +106,7 @@ class Observation
         $this->createdAt = new \DateTime();
         $this->updatedAt = new \DateTime();
         $this->validated = false;
+        $this->ordre = "";
     }
 
 
@@ -308,6 +320,26 @@ class Observation
     {
         $this->user = $user;
     }
+
+
+
+    /**
+     * @return string
+     */
+    public function getOrdre()
+    {
+        return $this->ordre;
+    }
+
+    /**
+     * @param string $ordre
+     */
+    public function setOrdre($ordre)
+    {
+        $this->ordre = $ordre;
+    }
+
+
 
 
 }

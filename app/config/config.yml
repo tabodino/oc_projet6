@@ -102,3 +102,10 @@ assetic:
 # Maxmind GEO
 maxmind_geoip:
     data_file_path: "%kernel.root_dir%/../web/GeoIPCity.dat"
+
+#Twig extension
+services:
+    twig.extension.text:
+        class: Twig_Extensions_Extension_Text
+        tags:
+            - { name: twig.extension }

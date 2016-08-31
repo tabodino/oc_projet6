@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Taxref
  * @ORM\Entity(repositoryClass="OC\CoreBundle\Repository\TaxrefRepository")
- * @ORM\Table(name="TAXREF")
+ * @ORM\Table(name="oc6_taxref")
  *
  */
 class Taxref
@@ -72,6 +72,7 @@ class Taxref
      * @var string
      *
      * @ORM\Column(name="RANG", type="string", length=4, nullable=true)
+     *
      */
     private $rang;
 

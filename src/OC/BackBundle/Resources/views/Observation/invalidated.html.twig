@@ -34,21 +34,19 @@
                                 <tbody>
                                 {% for observation in observations %}
 
-
-
                                     <tr>
                                        <td>
-                                           {#  {% if observation.image != null %}
+                                             {% if observation.image != null %}
                                                  <img class="thumb_bird" src="{{ asset('/uploads/img/'~observation.image.url) }}" width="80" alt="{{ observation.image.alt }}">
-                                             {% endif %}#}
+                                             {% endif %}
 
                                         </td>
                                         <td>{{ observation.title}}</td>
                                         <td>{{ observation.dsc }}</td>
                                         <td>{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
-                                        <td></td>
+                                        <td>{{ observation.user.username }}</td>
                                         <td>
-                                            <a href="{{ path('oc_back_observation_read', { 'id': observation.id}) }}" class="btn btn-success">Valider</a>
+                                            <a href="{{ path('oc_back_observation_validation_read', { 'id': observation.id}) }}" class="btn btn-success">Valider</a>
                                             <a href="{{ path('oc_back_observation_delete', { 'id': observation.id}) }}" class="btn btn-danger">Supprimer</a>
                                         </td>
                                     </tr>

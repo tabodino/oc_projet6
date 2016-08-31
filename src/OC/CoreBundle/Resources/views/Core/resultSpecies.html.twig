@@ -1,0 +1,109 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block title %}Résultats espèces{% endblock title %}
+
+{% block body %}
+
+    <div id='main' role='main'>
+        <div id='main-content-header'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <h1 class='title'>Résultats</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div id='main-content'>
+          <div class='container'>
+              <div class='row'>
+                  <div class='col-sm-12'>
+
+                      <form class="mg-b" method="get" action="{{ path('oc_core_result_species') }}">
+                          <div class="input-group">
+                              <input class="form-control" type="text" name="keyword" placeholder="Rechercher...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-contrast" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <br>
+            <div class='row'>
+              <div class='col-sm-12'>
+                <div class='page-header page-header-with-icon no-mg-t'>
+                  <i class='fa fa-search'></i>
+                  <h2>
+                    Résultats
+
+                  </h2>
+                </div>
+                <div class='row panels'>
+                  {% for s in species %}
+                    <div class='col-sm-4 panel-item'>
+                      <div class='panel panel-circle-contrast panel-light pricing-table'>
+                        <div class='panel-icon'>
+                          <i class='fa fa-twitter icon'></i>
+                        </div>
+                        <div class='panel-body'>
+                          <h3 style="min-height:50px;" class='panel-title'>{{ s.nomVern }}</h3>
+                          <h4>{{ s.ordre }}</h4>
+                          <ul class='list-unstyled'>
+                            <li>
+                              <strong>Famille</strong>
+                              {{ s.famille }}
+                            </li>
+                            <li>
+                              <strong>Lb Nom</strong>
+                              {{ s.lbNom }}
+                            </li>
+                            <li>
+                              <strong>Lb Auteur</strong>
+                              {{ s.lbAuteur }}
+                            </li>
+                            <li>
+
+                              <strong>Nom complet</strong>
+
+                              {{ s.nomComplet|truncate(20)}}
+                            </li>
+                            <li>
+                              <strong>Nom valide</strong>
+                              {{ s.nomValide|truncate(20) }}
+                            </li>
+
+
+                          </ul>
+                          <a class='btn btn-block  btn-success' href='{{ path('oc_core_detail_species', { 'id': s.id }) }}'>Voir</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  {% endfor %}
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+                        <div class='fade' id='scroll-to-top'>
+                            <i class='fa fa-icon-chevron-up'></i>
+                        </div>
+
+                    </div>
+
+
+
+{% endblock body %}

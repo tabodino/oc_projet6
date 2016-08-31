@@ -40,7 +40,7 @@
 </head>
 
 
-<body class='homepage'>
+{% block body_tag %}<body class='homepage'>{% endblock body_tag %}
 <div id='wrapper'>
     <header id='header'>
         <div class='container'>
@@ -63,11 +63,12 @@
                     <ul class='nav navbar-nav navbar-right'>
                         <li>
                             <a href='{{ path('oc_core_accueil') }}'><span>Accueil</span></a>
-
                         </li>
                         <li>
                             <a href='{{ path('oc_core_especes') }}'><span>Les espèces</span></a>
-
+                        </li>
+                        <li>
+                            <a href='{{ path('oc_core_observations') }}'><span>Les observations</span></a>
                         </li>
                         <li>
                             <a href='{{ path('oc_core_contact') }}'><span>Contact</span></a>
@@ -178,6 +179,7 @@
 
 {% endblock %}
 
+{% block custom_script %}{% endblock custom_script %}
 
 </body>
 

@@ -21,7 +21,7 @@
 
                 {% for o in orders %}
                     <div class='col-sm-2 portfolio-box portfolio-filter-photography portfolio-item'>
-                        <a href="{{ path('oc_core_details_espece', {'order': o.ordre}) }}" >
+                        <a href="{{ path('oc_core_details_order_species', {'order': o.ordre}) }}" >
                             <div class='image-link'>
                                 <i class='fa fa-search'></i>
                                 <img class="img-responsive img-rounded center-block" alt="{{ o.ordre }}" width="585" height="382" src="{{ asset('bundles/occore/img/orders/'~o.ordre) }}.jpg"  />

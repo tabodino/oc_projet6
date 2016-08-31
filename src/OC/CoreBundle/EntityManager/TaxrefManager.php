@@ -27,6 +27,11 @@ class TaxrefManager
         return $this->getRepository()->findAll();
     }
 
+    public function find($id)
+    {
+        return $this->getRepository()->find($id);
+    }
+
     /**
      * Retourne tous les ordres de la table taxref
      * @return mixed
@@ -34,6 +39,11 @@ class TaxrefManager
     public function getAllOrderTaxref()
     {
         return $this->getRepository()->getAllOrderTaxref();
+    }
+
+    public function getSpeciesById($id)
+    {
+        return $this->getRepository()->getSpeciesById($id);
     }
 
     /**
@@ -44,6 +54,11 @@ class TaxrefManager
     public function getTaxrefSpeciesByOrder($order)
     {
         return $this->getRepository()->getTaxrefSpeciesByOrder($order);
+    }
+
+    public function searchSpecies($keyword)
+    {
+        return $this->getRepository()->searchSpecies($keyword);
     }
 
     /**
