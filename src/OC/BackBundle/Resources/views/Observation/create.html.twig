@@ -71,8 +71,10 @@
                                     </div>
                                     <br><br>
 
-                                    <input type="hidden" name="observation[latitude]" value="{{ lat }}">
-                                    <input type="hidden" name="observation[longitude]" value="{{ long }}">
+                                   {# <input type="hidden" name="observation[latitude]" value="{{ lat }}">
+                                    <input type="hidden" name="observation[longitude]" value="{{ long }}">#}
+                                     <input id="latitude" type="hidden" name="observation[latitude]" value="">
+                                     <input id="longitude" type="hidden" name="observation[longitude]" value="">
 
                                 </div>
 
@@ -147,20 +149,22 @@
             alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
 
         function successCallback(position) {
-            alert("Latitude : " + position.coords.latitude + ", longitude : " + position.coords.longitude);
+            console.log("Latitude : " + position.coords.latitude + ", longitude : " + position.coords.longitude);
+            document.getElementById("latitude").value = position.coords.latitude;
+            document.getElementById("longitude").value = position.coords.longitude;
         }
         ;
 
         function errorCallback(error) {
             switch (error.code) {
                 case error.PERMISSION_DENIED:
-                    alert("L'utilisateur n'a pas autorisé l'accès à sa position");
+                   console.log("L'utilisateur n'a pas autorisé l'accès à sa position");
                     break;
                 case error.POSITION_UNAVAILABLE:
-                    alert("L'emplacement de l'utilisateur n'a pas pu être déterminé");
+                   console.log("L'emplacement de l'utilisateur n'a pas pu être déterminé");
                     break;
                 case error.TIMEOUT:
-                    alert("Le service n'a pas répondu à temps");
+                    console.log("Le service n'a pas répondu à temps");
                     break;
             }
         }

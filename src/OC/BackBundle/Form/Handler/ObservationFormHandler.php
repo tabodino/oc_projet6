@@ -17,6 +17,8 @@ class ObservationFormHandler
     protected $observation;
     protected $user;
 
+
+
     public function __construct(Form $form, Request $request, EntityManager $em, Observation $observation, $user)
     {
         $this->form = $form;
@@ -31,7 +33,10 @@ class ObservationFormHandler
     {
         $this->form->handleRequest($this->request);
 
+
+
         if ($this->request->isMethod('post') && $this->form->isValid()) {
+
             $this->onSuccess();
 
             return true;
@@ -45,15 +50,32 @@ class ObservationFormHandler
     {
         $observation = $this->form->getData();
 
+        $this->getPosition($observation->getLatitude(), $observation->getLongitude());
+
         $observation->setUser($this->user);
 
-        if ($this->user->hasRole("ROLE_NATURALISTE"))
-
-            $observation->setValidated(1);
+        if ($this->user->hasRole("ROLE_NATURALISTE")) $observation->setValidated(1);
 
         $this->em->persist($observation);
 
         $this->em->flush();
+    }
+
+    private function getPosition($latitude, $longitude)
+    {
+
+        //$kernel->getContainer()->get('maxmind.geoip');‏
+        //$geoip = $this->get('maxmind.geoip')->lookup($this->request->getClientIp());
+       // $lat = $geoip->getLatitude();
+       // $long = $geoip->getLongitude();
+
+      //  var_dump($lat); die();
+        if ($latitude == NULL || $longitude == NULL) {
+
+            //geoIp
+
+
+        }
     }
 
 

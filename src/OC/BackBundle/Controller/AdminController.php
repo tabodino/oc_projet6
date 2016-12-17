@@ -12,7 +12,19 @@ class AdminController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('OCBackBundle:Admin:index.html.twig');
+        $repository = $this->getDoctrine()->getRepository('OCBackBundle:User');
+
+        $nbUser = $repository->countAllUsers();
+
+        $nbObservation = $this->get('oc_back_observation.manager')->countAllObservations();
+
+        $nbSpecies = $this->get('oc_core_taxref.manager')->countAllTaxref();
+
+        return $this->render('OCBackBundle:Admin:index.html.twig', array(
+            'nbUser' => $nbUser,
+            'nbObservations' => $nbObservation,
+            'nbSpecies' => $nbSpecies,
+        ));
     }
 
     /**

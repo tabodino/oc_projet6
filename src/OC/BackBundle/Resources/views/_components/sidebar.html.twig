@@ -6,13 +6,13 @@
             <a class="clearfix" href="">
 
                 <span class="f-11">
-                    <span class="d-block">{{ app.user }}</span>
+                    <span class="d-block"> <i class="zmdi zmdi-account"></i> {{ app.user }}</span>
                     <small class="text-lowercase"></small>
                 </span>
             </a>
             <ul>
-                <li><a href="">Mon profil</a></li>
-                <li><a href="">Changer mot de passe</a></li>
+                <li><a href="{{ path("oc_back_profile") }}">Mon profil</a></li>
+                <li><a href="{{ path("oc_back_profile") }}">Changer mot de passe</a></li>
                 <li><a href="{{ path('fos_user_security_logout') }}">Me déconnecter</a></li>
             </ul>
         </li>
@@ -25,7 +25,7 @@
         </li>
         <li class="sm-sub">
             <a href="">
-                <i class="zmdi zmdi-money-box"></i>
+                <i class="zmdi zmdi-eye"></i>
                 <span>Observations</span>
             </a>
             <ul>

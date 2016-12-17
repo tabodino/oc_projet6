@@ -29,7 +29,7 @@
         "maxmind/geoip": "dev-master",
         "fzaninotto/Faker": "^1.5",
         "doctrine/doctrine-fixtures-bundle": "~2.2",
-        "twig/extensions" : "dev-master",
+        "twig/extensions" : "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

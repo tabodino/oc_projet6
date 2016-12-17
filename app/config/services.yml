@@ -10,7 +10,12 @@ services:
             - { name: form.type, alias: app_user_registration }
 
     country.twig_extension:
-            class: OC\CoreBundle\Twig\CountryExtension
-            public: false
-            tags:
-                - { name: twig.extension }
+        class: OC\CoreBundle\Twig\CountryExtension
+        public: false
+        tags:
+            - { name: twig.extension }
+
+    app.container:
+        class: OC\backBundle\Helper\GlobalHelper
+        arguments: ["@service_container"]
+

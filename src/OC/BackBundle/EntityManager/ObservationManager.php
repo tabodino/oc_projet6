@@ -73,6 +73,11 @@ class ObservationManager
         return $observations;
     }
 
+    public function countAllObservations()
+    {
+        return $this->getRepository()->countAllObservations();
+    }
+
     /**
      *
      * Supprime une observation

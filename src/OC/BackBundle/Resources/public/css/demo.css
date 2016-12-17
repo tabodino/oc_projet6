@@ -219,3 +219,22 @@ img.thumb_bird {
 table th {
     width: auto !important;
 }
+
+.card {
+    height:200px;
+}
+.card p{
+    margin-top: 5%;
+}
+
+.card span {
+    font-size: 1.4em;
+    margin-top: 15% !important;
+    display: block;
+    padding:0
+}
+.stat-nb {
+    font-size: 3em;
+    margin-top: 20% !important;
+;
+}

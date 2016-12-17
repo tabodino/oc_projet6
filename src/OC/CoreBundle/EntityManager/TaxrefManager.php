@@ -56,9 +56,21 @@ class TaxrefManager
         return $this->getRepository()->getTaxrefSpeciesByOrder($order);
     }
 
+    /**
+     * @param $keyword
+     * @return mixed
+     */
     public function searchSpecies($keyword)
     {
         return $this->getRepository()->searchSpecies($keyword);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function countAllTaxref()
+    {
+        return $this->getRepository()->countAllTaxref();
     }
 
     /**

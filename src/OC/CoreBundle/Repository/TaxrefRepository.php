@@ -36,7 +36,10 @@ class TaxrefRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
-
+    /**
+     * @param $keyword
+     * @return array
+     */
     public function searchSpecies($keyword)
     {
         $qb = $this->createQueryBuilder('s')
@@ -57,6 +60,10 @@ class TaxrefRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
+    /**
+     * @param $id
+     * @return array
+     */
     public function getSpeciesById($id)
     {
         $qb = $this->createQueryBuilder('t')
@@ -91,6 +98,18 @@ class TaxrefRepository extends EntityRepository
         ;
 
         return $qb->getQuery()->getScalarResult();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function countAllTaxref()
+    {
+        $qb = $this->createQueryBuilder('t')
+            ->select('COUNT(t)')
+        ;
+
+        return $qb->getQuery()->getSingleScalarResult();
     }
 
 }

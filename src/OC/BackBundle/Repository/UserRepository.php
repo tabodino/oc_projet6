@@ -10,4 +10,13 @@ namespace OC\BackBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function countAllUsers()
+    {
+        $qb = $this->createQueryBuilder('u')
+            ->select('COUNT(u)')
+            ->where('u.enabled = 1')
+        ;
+
+        return $qb->getQuery()->getSingleScalarResult();
+    }
 }

@@ -55,4 +55,14 @@ class ObservationRepository extends \Doctrine\ORM\EntityRepository
 
         return $qb->getQuery()->getResult();
     }
+
+    public function countAllObservations()
+    {
+        $qb = $this->createQueryBuilder('o')
+            ->select('COUNT(o)')
+            ->where('o.validated = 1')
+        ;
+
+        return $qb->getQuery()->getSingleScalarResult();
+    }
 }

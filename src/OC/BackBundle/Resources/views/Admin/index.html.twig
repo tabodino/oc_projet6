@@ -6,84 +6,131 @@
             <header class="page-header">
                 <h2 class="text-center">Accueil</h2>
             </header>
+            <br><br>
 
-            <div class="overview row">
 
-            <a href="{{ path('oc_back_observation_create') }}">
-                <div class="col-md-3 col-sm-12">
-                    <div class="o-item bg-cyan">
-                        <div class="oi-title">
-                            <span><i class="zmdi zmdi-plus zmdi-hc-2x"></i> Ajouter une observation</span>
-                        </div>
+            <div class="row">
 
-                    </div>
+                <div class="col-md-6 col-sm-12">
 
-                </div>
-            </a>
-                <a href="{{ path('oc_back_observations') }}">
-                    <div class="col-md-3 col-sm-12">
-                        <div class="o-item bg-amber">
-                            <div class="oi-title">
-                                <span><i class="zmdi zmdi-eye zmdi-hc-2x"></i> Consulter les observations</span>
+                    <a href="{{ path('oc_back_observation_create') }}">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="o-item bg-cyan card">
+                                <div class="oi-title text-center">
+                                    <p><i class="zmdi zmdi-plus zmdi-hc-5x"></i></p>
+                                    <span> Ajouter une observation</span>
+                                </div>
+
                             </div>
 
                         </div>
-                    </div>
-                </a>
-                {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
-
-
-                    <a href="{{ path('oc_back_invalidated_observations') }}">
-                        <div class="col-md-3 col-sm-12">
-                            <div class="o-item bg-red">
-                                <div class="oi-title">
-                                    <span><i class="zmdi zmdi-check zmdi-hc-2x"></i> Valider les observations</span>
+                    </a>
+                    <a href="{{ path('oc_back_observations') }}">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="o-item bg-amber card">
+                                <div class="oi-title text-center">
+                                    <p><i class="zmdi zmdi-eye zmdi-hc-5x"></i></p>
+                                    <span> Consulter les observations</span>
                                 </div>
 
                             </div>
                         </div>
                     </a>
-
-                {% endif %}
-
+                    {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
 
 
+                        <a href="{{ path('oc_back_invalidated_observations') }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-red card">
+                                    <div class="oi-title text-center">
+                                        <p><i class="zmdi zmdi-check zmdi-hc-5x"></i></p>
+                                        <span> Valider les observations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    {% endif %}
 
 
-                <div class="col-md-3 col-sm-12">
-                    <div class="o-item bg-green" >
-                        <div class="oi-title">
-                            <span"><i class="zmdi zmdi-chart zmdi-hc-2x"></i> Statistiques</span>
+                    <a href="{{ path("oc_back_profile") }}">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="o-item bg-green card" >
+                            <div class="oi-title text-center">
+                                <p><i class="zmdi zmdi-account zmdi-hc-5x"></i></p>
+                                <span> Mon compte</span>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="o-item bg-bluegray card">
+                                <div class="oi-title text-center">
+                                    <p><i class="zmdi zmdi-chart zmdi-hc-5x"></i></p>
+                                    <span> Statistiques</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+
+
+                        <div class="col-md-6 col-sm-12">
+                            <div class="o-item bg-cyan card">
+                                <div class="oi-title text-center">
+                                    <p class="stat-nb">{{ nbObservations }}</p>
+                                    <span></i> Nombre d'observations</span>
+                                </div>
+
+                            </div>
+
                         </div>
 
 
-                    </div>
-                </div>
-                <a href="{{ path('fos_user_security_logout') }}">
-                <div class="col-md-3 col-sm-12">
-                    <div class="o-item bg-bluegray">
-                        <div class="oi-title">
-                            <span><i class="zmdi zmdi-power-off zmdi-hc-2x"></i> Déconnexion</span>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="o-item bg-amber card">
+                                <div class="oi-title text-center">
+                                    <p class="stat-nb">{{  nbSpecies }}</p>
+                                    <span> Nombre d'espèces</span>
+                                </div>
+
+                            </div>
                         </div>
 
 
+                    <div class="col-md-6 col-sm-12">
+                        <div class="o-item bg-green card" >
+                            <div class="oi-title text-center">
+                                <p class="stat-nb">{{ nbUser }}</p>
+                                <span> Nombre d'utilisateurs</span>
+                            </div>
+
+
+                        </div>
                     </div>
+
+                    <a href="{{ path('fos_user_security_logout') }}">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="o-item bg-red card">
+                                <div class="oi-title text-center">
+                                    <p><i class="zmdi zmdi-power-off zmdi-hc-5x"></i></p>
+                                    <span> Déconnexion</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-                </a>
             </div>
 
 
-            <div class="row">
-                <div class="col-sm-12">
-
-                    <!-- Calendar -->
-                    <div class="tile">
-                        <div class="calendar-widget"></div>
-                    </div>
-                </div>
-
-
-            </div>
         </div>
     </section>
 
