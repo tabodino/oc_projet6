@@ -20,12 +20,12 @@
                         </div>
 
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-responsive">
                                 <thead class="bg-cyan">
                                 <tr>
                                     <th>Aperçu</th>
                                     <th>Titre</th>
-                                    <th>Desc.</th>
+                                    <th class="hidden-xs">Desc.</th>
                                     <th>Date</th>
                                     <th>Validé</th>
                                     <th>Action</th>
@@ -42,7 +42,7 @@
 
                                         </td>
                                         <td>{{ observation.title}}</td>
-                                        <td>{{ observation.dsc }}</td>
+                                        <td class="hidden-xs">{{ observation.dsc }}</td>
                                         <td>{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
                                         <td>{% if observation.validated %}
                                                 <i class="zmdi zmdi-check-circle zmdi-hc-2x"></i>
@@ -51,7 +51,7 @@
                                             {% endif %}</td>
                                         <td>
                                             <a href="{{ path('oc_back_observation_read', { 'id': observation.id}) }}" class="btn btn-success">Voir</a>
-                                            <a href="{{ path('oc_back_observation_delete', { 'id': observation.id}) }}" class="btn btn-danger">Supprimer</a>
+                                            <a href="{{ path('oc_back_observation_delete', { 'id': observation.id}) }}" class="btn btn-danger sa-delete-obs" onclick="return false;">Supprimer</a>
                                         </td>
                                     </tr>
 
@@ -71,7 +71,6 @@
 
             </div>
         </div>
-
 
     </section>
 

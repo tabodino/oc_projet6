@@ -238,3 +238,6 @@ table th {
     margin-top: 20% !important;
 ;
 }
+.home-link:hover div.card{
+    opacity: 0.75;
+}

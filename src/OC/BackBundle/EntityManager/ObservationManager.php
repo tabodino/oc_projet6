@@ -4,10 +4,21 @@ namespace OC\BackBundle\EntityManager;
 
 use Doctrine\ORM\EntityManager;
 
+/**
+ * Class ObservationManager
+ * @package OC\BackBundle\EntityManager
+ */
 class ObservationManager
 {
+    /**
+     * @var EntityManager
+     */
     protected $em;
 
+    /**
+     * ObservationManager constructor.
+     * @param EntityManager $em
+     */
     public function __construct(EntityManager $em)
     {
         $this->em = $em;
@@ -23,6 +34,10 @@ class ObservationManager
     }
 
     // Trouve un visiteur/reservation
+    /**
+     * @param $id
+     * @return null|object
+     */
     public function find($id)
     {
         $observation = $this->getRepository()->find($id);
@@ -32,6 +47,10 @@ class ObservationManager
         return $observation;
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function findValidatedObservation($id)
     {
         $observation = $this->getRepository()->findValidatedObservation($id);
@@ -41,6 +60,9 @@ class ObservationManager
         return $observation;
     }
 
+    /**
+     * @return mixed
+     */
     public function getUnvalidatedObservation()
     {
         $observations = $this->getRepository()->getUnvalidatedObservation();
@@ -49,6 +71,9 @@ class ObservationManager
         return $observations;
     }
 
+    /**
+     * @return mixed
+     */
     public function getValidatedObservation()
     {
         $observations = $this->getRepository()->getValidatedObservation();
@@ -57,6 +82,9 @@ class ObservationManager
         return $observations;
     }
 
+    /**
+     * @return mixed
+     */
     public function getAllOrderTaxref()
     {
         $orders = $this->em->getRepository('OCCoreBundle:Taxref')->getAllOrderTaxref();
@@ -64,7 +92,10 @@ class ObservationManager
         return $orders;
     }
 
-
+    /**
+     * @param $keyword
+     * @return mixed
+     */
     public function searchObservation($keyword)
     {
         $observations = $this->getRepository()->searchObservation($keyword);
@@ -73,10 +104,32 @@ class ObservationManager
         return $observations;
     }
 
+    /**
+     * @param $userId
+     * @return mixed
+     */
+    public function getUserObservations($userId)
+    {
+        return $this->getRepository()->getUserObservations($userId);
+    }
+
+    /**
+     * @return mixed
+     */
     public function countAllObservations()
     {
         return $this->getRepository()->countAllObservations();
     }
+
+    /**
+     * @return mixed
+     */
+    public function countInvalidatedObservations()
+    {
+        return $this->getRepository()->countInvalidatedObservations();
+    }
+
+
 
     /**
      *

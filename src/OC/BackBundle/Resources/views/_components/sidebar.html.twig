@@ -23,40 +23,62 @@
                 <span>Accueil</span>
             </a>
         </li>
-        <li class="sm-sub">
-            <a href="">
-                <i class="zmdi zmdi-eye"></i>
-                <span>Observations</span>
-            </a>
-            <ul>
-                <li><a href="{{ path("oc_back_observations") }}">Voir les observations</a></li>
-                <li><a href="{{ path("oc_back_observation_create") }}">Ajouter une observation</a></li>
-            </ul>
-        </li>
 
-        <li class="sm-sub">
-            <a href="">
-                <i class="zmdi zmdi-account"></i>
-                <span>Utilisateurs</span>
-            </a>
-            <ul>
-                <li><a href="{{ path("oc_back_profile") }}">Mon profil</a></li>
-                <li><a href="{{ path("oc_back_users") }}">Voir les utilisateurs</a></li>
-                <li><a href="{{ path("oc_back_profile") }}">Ajouter un utilisateur</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="">
-                <i class="zmdi zmdi-trending-up"></i>
-                <span>Statistiques</span>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="zmdi zmdi-calendar"></i>
-                <span>Validations</span>
-            </a>
-        </li>
+
+        {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
+
+            <li class="sm-sub">
+                <a href="">
+                    <i class="zmdi zmdi-eye"></i>
+                    <span>Observations</span>
+                </a>
+                <ul>
+                    <li><a href="{{ path("oc_back_my_observations") }}">Mes observations</a></li>
+                    <li><a href="{{ path("oc_back_observations") }}">Voir les observations</a></li>
+                    <li><a href="{{ path("oc_back_observation_create") }}">Ajouter une observation</a></li>
+                </ul>
+            </li>
+
+            <li class="sm-sub">
+                <a href="">
+                    <i class="zmdi zmdi-account"></i>
+                    <span>Utilisateurs</span>
+                </a>
+                <ul>
+                    <li><a href="{{ path("oc_back_profile") }}">Mon profil</a></li>
+                    <li><a href="{{ path("oc_back_users") }}">Voir les utilisateurs</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="{{ path('oc_back_observation_unvalidated') }}">
+                    <i class="zmdi zmdi-check"></i>
+                    <span>Validations</span>
+                </a>
+            </li>
+
+        {%  else %}
+
+            <li class="sm-sub">
+                <a href="">
+                    <i class="zmdi zmdi-eye"></i>
+                    <span>Mes observations</span>
+                </a>
+                <ul>
+                    <li><a href="{{ path("oc_back_my_observations") }}">Voir mes observations</a></li>
+                    <li><a href="{{ path("oc_back_observation_create") }}">Ajouter une observation</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="{{ path("oc_back_profile") }}">
+                    <i class="zmdi zmdi-account"></i>
+                    <span>Mon compte</span>
+                </a>
+            </li>
+
+
+        {% endif %}
         <li>
             <a href="{{ path('oc_back_help') }}">
                 <i class="zmdi zmdi-help"></i>

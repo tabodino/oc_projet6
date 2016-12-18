@@ -6,3 +6,7 @@ services:
     oc_back_file_uploader:
         class: OC\BackBundle\Service\FileUploader
         arguments: ["%image_directory%"]
+
+    oc_back_user.manager:
+        class: OC\BackBundle\EntityManager\UserManager
+        arguments: ["@doctrine.orm.default_entity_manager"]

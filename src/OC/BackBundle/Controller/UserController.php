@@ -26,16 +26,20 @@ class UserController extends Controller
     }
 
 
-
     /**
      * @Route("/utilisateurs", name="oc_back_users")
      */
     public function listUsersAction()
     {
-        // Récupération utilisateurs FOSUserBundle
-        $users = $this->get('fos_user.user_manager')->findUsers();
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+            // Récupération utilisateurs FOSUserBundle
+            $users = $this->get('fos_user.user_manager')->findUsers();
 
-        return $this->render('OCBackBundle:User:listUsers.html.twig', array('users' => $users));
+            return $this->render('OCBackBundle:User:listUsers.html.twig', array('users' => $users));
+        }else {
+            return $this->redirectToRoute('oc_back_homepage');
+        }
+
     }
 
 
@@ -44,9 +48,15 @@ class UserController extends Controller
      */
     public function deleteUserAction($id)
     {
-        // Récupère le user manager
-        $this->get('oc_back_user.manager')->deleteUser($id);
 
-        return $this->redirectToRoute('oc_back_users');
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+            // Récupère le user manager
+            $this->get('oc_back_user.manager')->deleteUser($id);
+
+            return $this->redirectToRoute('oc_back_users');
+        }else {
+            return $this->redirectToRoute('oc_back_homepage');
+        }
+
     }
 }

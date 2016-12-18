@@ -16,22 +16,22 @@ class ObservationController extends Controller
 {
     /**
      * @Route("/observation/creation", name="oc_back_observation_create")
-     * @Cache(expires="tomorrow", public=true)
      */
     public function createObservationAction(Request $request)
     {
         $observation = new Observation();
 
         $userAgent = $request->headers->get('User-Agent');
+        // To authorize local test
+        ($request->getHost() == "localhost") ? $ip = '82.249.3.94' : $ip = $request->getClientIp();
 
-        $geoip = $this->get('maxmind.geoip')->lookup('82.249.3.94');
+        $geoip = $this->get('maxmind.geoip')->lookup($ip);
         $lat = $geoip->getLatitude();
         $long = $geoip->getLongitude();
 
         $user = $this->get('security.token_storage')->getToken()->getUser();
 
         $form = $this->createForm(ObservationType::class, $observation);
-
         $formHandler = new ObservationFormHandler($form, $request, $this->getDoctrine()->getManager(), $observation, $user);
 
         $mobileDetector = new MobileDetector();
@@ -42,28 +42,43 @@ class ObservationController extends Controller
 
         return $this->render('OCBackBundle:Observation:create.html.twig', array(
             'form' => $form->createView(),
-            'lat' =>$lat,
-            'long' =>$long,
+            'lat' => $lat,
+            'long' => $long,
             'userAgent' => $userAgent,
             'mobile' => $mobile
-
         ));
     }
 
     /**
-     * @Route("/observations", name="oc_back_observations")
-     * @Cache(expires="tomorrow", public=true)
+     * @Route("/observation/liste", name="oc_back_observations")
      */
     public function listObservationAction()
     {
-        $observations = $this->get('oc_back_observation.manager')->getAll();
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+            $observations = $this->get('oc_back_observation.manager')->getAll();
 
-        return $this->render('OCBackBundle:Observation:list.html.twig', array('observations' => $observations));
+            return $this->render('OCBackBundle:Observation:list.html.twig', array('observations' => $observations));
+        } else {
+            return $this->redirectToRoute('oc_back_homepage');
+        }
+    }
+
+    /**
+     * @Route("/observation/mes_observations", name="oc_back_my_observations")
+     */
+    public function listUserObservations()
+    {
+        $user = $this->getUser();
+
+        $userId = $user->getId();
+
+        $observations = $this->get('oc_back_observation.manager')->getUserObservations($userId);
+
+        return $this->render('OCBackBundle:Observation:userlist.html.twig', array('observations' => $observations));
     }
 
     /**
      * @Route("/observation/detail/{id}", name="oc_back_observation_read")
-     * @Cache(expires="tomorrow", public=true)
      */
     public function detailObservationAction($id)
     {
@@ -74,7 +89,6 @@ class ObservationController extends Controller
 
     /**
      * @Route("/observation/suppression/{id}", name="oc_back_observation_delete")
-     * @Cache(expires="tomorrow", public=true)
      */
     public function deleteObservationAction($id)
     {
@@ -83,20 +97,28 @@ class ObservationController extends Controller
         return $this->redirectToRoute('oc_back_observations');
     }
 
+
     /**
-     * @Route("/observations/invalides", name="oc_back_invalidated_observations")
-     * @Cache(expires="tomorrow", public=true)
+     * @Route("/observation/invalide", name="oc_back_observation_unvalidated")
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function invalidatedObservationAction()
+    public function invalidatedObservationsAction()
     {
-        $observations = $this->get('oc_back_observation.manager')->getUnvalidatedObservation();
 
-        $orders = $this->get('oc_back_observation.manager')->getAllOrderTaxref();
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+            $observations = $this->get('oc_back_observation.manager')->getUnvalidatedObservation();
 
-        return $this->render('OCBackBundle:Observation:invalidated.html.twig', array(
-            'observations' => $observations,
-            'orders' => $orders,
-        ));
+            $orders = $this->get('oc_back_observation.manager')->getAllOrderTaxref();
+
+            return $this->render('OCBackBundle:Observation:invalidated.html.twig', array(
+                'observations' => $observations,
+                'orders' => $orders,
+            ));
+        }else {
+            return $this->redirectToRoute('oc_back_homepage');
+        }
+
+
     }
 
     /**
@@ -112,9 +134,7 @@ class ObservationController extends Controller
 
         if ($request->isMethod('post'))
         {
-
             $observation->setValidated(1);
-
             $observation->setFamily($request->get('ordre'));
             $observation->setOrdre($request->get('ordre'));
 
@@ -135,5 +155,5 @@ class ObservationController extends Controller
     }
 
 
-    
+
 }

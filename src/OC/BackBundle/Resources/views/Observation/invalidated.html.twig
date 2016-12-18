@@ -20,13 +20,13 @@
                         </div>
 
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-responsive">
                                 <thead class="bg-cyan">
                                 <tr>
                                     <th>Aperçu</th>
                                     <th>Titre</th>
-                                    <th>Desc.</th>
-                                    <th>Date</th>
+                                    <th class="hidden-xs">Desc.</th>
+                                    <th class="hidden-xs">Date</th>
                                     <th>Auteur</th>
                                     <th>Action</th>
                                 </tr>
@@ -42,8 +42,8 @@
 
                                         </td>
                                         <td>{{ observation.title}}</td>
-                                        <td>{{ observation.dsc }}</td>
-                                        <td>{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
+                                        <td class="hidden-xs">{{ observation.dsc }}</td>
+                                        <td class="hidden-xs">{{ observation.createdAt|date('d/m/Y H:i:s') }}</td>
                                         <td>{{ observation.user.username }}</td>
                                         <td>
                                             <a href="{{ path('oc_back_observation_validation_read', { 'id': observation.id}) }}" class="btn btn-success">Valider</a>

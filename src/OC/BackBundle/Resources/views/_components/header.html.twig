@@ -9,7 +9,6 @@
 
         <li class="hidden-xs hidden-sm"><h2> Partie administration NAO</h2></li>
 
-
         <!-- Quick Apps -->
         <li class="hidden-xs dropdown pull-right">
             <a href="" data-toggle="dropdown">
@@ -21,35 +20,50 @@
 
                 <div class="la-body">
                     <div class="lab-item">
-                        <a href="" class="bg-teal">
+                        <a href="{{ path('oc_back_homepage') }}" class="bg-cyan">
+                            <i class="zmdi zmdi-home"></i>
+                        </a>
+                        <small>Accueil</small>
+                    </div>
+
+                    <div class="lab-item">
+                        <a href="{{ path('oc_back_observations') }}" class="bg-amber">
                             <i class="zmdi zmdi-eye"></i>
                         </a>
                         <small>Observations</small>
                     </div>
 
-                    <div class="lab-item">
-                        <a href="" class="bg-green">
-                            <i class="zmdi zmdi-account"></i>
-                        </a>
-                        <small>Utilisateurs</small>
-                    </div>
+                    {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
+
+                        <div class="lab-item">
+                            <a href="{{ path('oc_back_users') }}" class="bg-green">
+                                <i class="zmdi zmdi-account"></i>
+                            </a>
+                            <small>Utilisateurs</small>
+                        </div>
+
+                        <div class="lab-item">
+                            <a href="{{ path('oc_back_observation_unvalidated') }}" class="bg-blue">
+                                <i class="zmdi zmdi-check"></i>
+                            </a>
+                            <small>Validations</small>
+                        </div>
+
+
+                    {% else %}
+
+                        <div class="lab-item">
+                            <a href="{{ path('oc_back_profile') }}" class="bg-green">
+                                <i class="zmdi zmdi-account"></i>
+                            </a>
+                            <small>Compte</small>
+                        </div>
+
+                    {% endif %}
+
 
                     <div class="lab-item">
-                        <a href="" class="bg-blue">
-                            <i class="zmdi zmdi-check"></i>
-                        </a>
-                        <small>Validations</small>
-                    </div>
-
-                    <div class="lab-item">
-                        <a href="" class="bg-orange">
-                            <i class="zmdi zmdi-trending-up"></i>
-                        </a>
-                        <small>Statistiques</small>
-                    </div>
-
-                    <div class="lab-item">
-                        <a href="" class="bg-cyan">
+                        <a href="{{ path('oc_back_help') }}" class="bg-bluegray">
                             <i class="zmdi zmdi-help-outline"></i>
                         </a>
                         <small>Aide</small>

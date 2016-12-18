@@ -15,17 +15,16 @@
                         <div class="t-header">
                             <div class="th-title">Liste des utilisateurs</div>
                             <br>
-                            <a href="{{ path('fos_user_registration_register') }}" class="btn bg-green"><i class="zmdi zmdi-plus-box"></i> Ajouter un utilisateur</a>
                         </div>
 
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table table-responsive">
                                 <thead class="bg-cyan">
                                 <tr>
                                     <th>N°</th>
                                     <th>Nom utilisateur</th>
                                     <th>Email</th>
-                                    <th>Dern. connexion</th>
+                                    <th class="hidden-xs">Dern. connexion</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
@@ -35,10 +34,10 @@
                                         <td>{{ loop.index }}</td>
                                         <td>{{ user.username}}</td>
                                         <td>{{ user.email }}</td>
-                                        <td>{{ user.lastLogin|date('d/m/Y') }}</td>
+                                        <td class="hidden-xs">{{ user.lastLogin|date('d/m/Y') }}</td>
                                         <td>
                                             {% if app.user != user.username%}
-                                                <a href="{{ path('oc_back_delete_user', { 'id': user.id })}}" class="btn bg-red sa-delete" onclick="return false;"><i class="zmdi zmdi-delete"></i> Supprimer</a>
+                                                <a href="{{ path('oc_back_delete_user', { 'id': user.id})}}" class="btn bg-red sa-delete" onclick="return false;"><i class="zmdi zmdi-delete"></i> Supprimer</a>
                                             {% endif %}
                                         </td>
                                     </tr>

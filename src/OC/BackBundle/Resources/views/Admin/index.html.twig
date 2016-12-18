@@ -13,7 +13,7 @@
 
                 <div class="col-md-6 col-sm-12">
 
-                    <a href="{{ path('oc_back_observation_create') }}">
+                    <a class="home-link" href="{{ path('oc_back_observation_create') }}">
                         <div class="col-md-6 col-sm-12">
                             <div class="o-item bg-cyan card">
                                 <div class="oi-title text-center">
@@ -22,24 +22,24 @@
                                 </div>
 
                             </div>
-
                         </div>
                     </a>
-                    <a href="{{ path('oc_back_observations') }}">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="o-item bg-amber card">
-                                <div class="oi-title text-center">
-                                    <p><i class="zmdi zmdi-eye zmdi-hc-5x"></i></p>
-                                    <span> Consulter les observations</span>
-                                </div>
 
-                            </div>
-                        </div>
-                    </a>
                     {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
 
+                        <a class="home-link" href="{{ path('oc_back_observations') }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-amber card">
+                                    <div class="oi-title text-center">
+                                        <p><i class="zmdi zmdi-eye zmdi-hc-5x"></i></p>
+                                        <span> Consulter les observations</span>
+                                    </div>
 
-                        <a href="{{ path('oc_back_invalidated_observations') }}">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="home-link" href="{{ path('oc_back_observation_unvalidated') }}">
                             <div class="col-md-6 col-sm-12">
                                 <div class="o-item bg-red card">
                                     <div class="oi-title text-center">
@@ -50,10 +50,34 @@
                             </div>
                         </a>
 
+                        <a class="home-link" href="{{ path("oc_back_users") }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-indigo card">
+                                    <div class="oi-title text-center">
+                                        <p><i class="zmdi zmdi-accounts zmdi-hc-5x"></i></p>
+                                        <span> Utilisateurs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    {% else %}
+
+                        <a class="home-link" href="{{ path('oc_back_my_observations') }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-amber card">
+                                    <div class="oi-title text-center">
+                                        <p><i class="zmdi zmdi-eye zmdi-hc-5x"></i></p>
+                                        <span> Consulter mes observations</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
                     {% endif %}
 
 
-                    <a href="{{ path("oc_back_profile") }}">
+                    <a class="home-link" href="{{ path("oc_back_profile") }}">
                     <div class="col-md-6 col-sm-12">
                         <div class="o-item bg-green card" >
                             <div class="oi-title text-center">
@@ -64,12 +88,12 @@
                     </div>
                     </a>
 
-                    <a href="">
+                    <a class="home-link" href="{{ path("oc_back_help") }}">
                         <div class="col-md-6 col-sm-12">
                             <div class="o-item bg-bluegray card">
                                 <div class="oi-title text-center">
-                                    <p><i class="zmdi zmdi-chart zmdi-hc-5x"></i></p>
-                                    <span> Statistiques</span>
+                                    <p><i class="zmdi zmdi-help zmdi-hc-5x"></i></p>
+                                    <span> Aide</span>
                                 </div>
 
 
@@ -114,18 +138,52 @@
                         </div>
                     </div>
 
-                    <a href="{{ path('fos_user_security_logout') }}">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="o-item bg-red card">
-                                <div class="oi-title text-center">
-                                    <p><i class="zmdi zmdi-power-off zmdi-hc-5x"></i></p>
-                                    <span> Déconnexion</span>
+                    {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
+
+
+
+                        <a class="home-link" href="{{ path('oc_back_observation_unvalidated') }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-indigo card">
+                                    <div class="oi-title text-center">
+                                        <p class="stat-nb">{{ nbInvalidated }}</p>
+                                        <span> Attentes de validation</span>
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
-                        </div>
-                    </a>
+                        </a>
+
+                        <a class="home-link" href="{{ path('fos_user_security_logout') }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-red card">
+                                    <div class="oi-title text-center">
+                                        <p><i class="zmdi zmdi-power-off zmdi-hc-5x"></i></p>
+                                        <span> Déconnexion</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+
+                    {% else %}
+
+                        <a class="home-link" href="{{ path('fos_user_security_logout') }}">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="o-item bg-red card">
+                                    <div class="oi-title text-center">
+                                        <p><i class="zmdi zmdi-power-off zmdi-hc-5x"></i></p>
+                                        <span> Déconnexion</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+
+                    {% endif %}
 
                 </div>
             </div>

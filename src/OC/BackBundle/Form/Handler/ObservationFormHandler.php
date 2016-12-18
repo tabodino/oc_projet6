@@ -18,7 +18,6 @@ class ObservationFormHandler
     protected $user;
 
 
-
     public function __construct(Form $form, Request $request, EntityManager $em, Observation $observation, $user)
     {
         $this->form = $form;
@@ -26,14 +25,11 @@ class ObservationFormHandler
         $this->em = $em;
         $this->observation = $observation;
         $this->user = $user;
-
     }
 
     public function process()
     {
         $this->form->handleRequest($this->request);
-
-
 
         if ($this->request->isMethod('post') && $this->form->isValid()) {
 

@@ -130,7 +130,7 @@ $(document).ready(function(){
         alert(href);
         swal({
             title: "Etes-vous sûr ?",
-            text: "Cette action est irreversible",
+            text: "Cette action",
             type: "warning",   
             showCancelButton: true,   
             confirmButtonColor: "#DD6B55",   
@@ -174,7 +174,7 @@ $(document).ready(function(){
         
         swal({
             title: "Etes-vous sûr ?",
-            text: "Cette action est irreversible",
+            text: "Cette action est irreversible.",
             type: "warning",
             showCancelButton: true,
             confirmButtonColor: "#DD6B55",
@@ -185,6 +185,30 @@ $(document).ready(function(){
         }, function(isConfirm){
             if (isConfirm) {
                 swal("Supprimé!", "L'utilisateur a été supprimé.", "success");
+                location.href = href;
+            } else {
+                swal("Annulé", "Aucune donnée supprimée.", "error");
+            }
+        });
+    });
+
+    // Delete observation in table
+    $('.sa-delete-obs').click(function(){
+        var href= $(this).attr('href');
+
+        swal({
+            title: "Etes-vous sûr ?",
+            text: "Cette action est irreversible.",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Confirmer",
+            cancelButtonText: "Annuler",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        }, function(isConfirm){
+            if (isConfirm) {
+                swal("Supprimé!", "L'observation a été supprimée.", "success");
                 location.href = href;
             } else {
                 swal("Annulé", "Aucune donnée supprimée.", "error");
@@ -211,17 +235,17 @@ var fileInput  = document.querySelector( ".input-file" ),
     the_return = document.querySelector(".file-return");
 
 // action lorsque la "barre d'espace" ou "Entrée" est pressée
-button.addEventListener( "keydown", function( event ) {
+/*button.addEventListener( "keydown", function( event ) {
     if ( event.keyCode == 13 || event.keyCode == 32 ) {
         fileInput.focus();
     }
-});
+});*/
 
 // action lorsque le label est cliqué
-button.addEventListener( "click", function( event ) {
+/*button.addEventListener( "click", function( event ) {
     fileInput.focus();
     return false;
-});
+});*/
 
 // affiche un retour visuel dès que input:file change
 fileInput.addEventListener( "change", function( event ) {
