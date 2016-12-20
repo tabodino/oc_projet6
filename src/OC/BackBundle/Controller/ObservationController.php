@@ -20,7 +20,6 @@ class ObservationController extends Controller
     public function createObservationAction(Request $request)
     {
         $observation = new Observation();
-
         $userAgent = $request->headers->get('User-Agent');
         // To authorize local test
         ($request->getHost() == "localhost") ? $ip = '82.249.3.94' : $ip = $request->getClientIp();
@@ -54,7 +53,8 @@ class ObservationController extends Controller
      */
     public function listObservationAction()
     {
-        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE') ||
+            $this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')) {
             $observations = $this->get('oc_back_observation.manager')->getAll();
 
             return $this->render('OCBackBundle:Observation:list.html.twig', array('observations' => $observations));
@@ -105,7 +105,8 @@ class ObservationController extends Controller
     public function invalidatedObservationsAction()
     {
 
-        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE') ||
+            $this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')) {
             $observations = $this->get('oc_back_observation.manager')->getUnvalidatedObservation();
 
             $orders = $this->get('oc_back_observation.manager')->getAllOrderTaxref();

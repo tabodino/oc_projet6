@@ -82,7 +82,7 @@ class Observation
     private $image;
 
     /**
-     * @ORM\ManyToOne(targetEntity="OC\BackBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="OC\BackBundle\Entity\User", cascade={"remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     protected $user;
@@ -95,9 +95,6 @@ class Observation
      * @ORM\Column(name="ordre", type="string", length=50)
      */
     private $ordre;
-
-   
-
 
 
     // Constructeur

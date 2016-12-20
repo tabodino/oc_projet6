@@ -31,7 +31,7 @@ class UserController extends Controller
      */
     public function listUsersAction()
     {
-        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')) {
             // Récupération utilisateurs FOSUserBundle
             $users = $this->get('fos_user.user_manager')->findUsers();
 
@@ -39,7 +39,6 @@ class UserController extends Controller
         }else {
             return $this->redirectToRoute('oc_back_homepage');
         }
-
     }
 
 
@@ -49,7 +48,7 @@ class UserController extends Controller
     public function deleteUserAction($id)
     {
 
-        if ($this->get('security.authorization_checker')->isGranted('ROLE_NATURALISTE')) {
+        if ($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')) {
             // Récupère le user manager
             $this->get('oc_back_user.manager')->deleteUser($id);
 

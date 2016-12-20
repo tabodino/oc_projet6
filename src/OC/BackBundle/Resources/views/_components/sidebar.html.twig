@@ -24,8 +24,22 @@
             </a>
         </li>
 
+        {% if app.user.roles|first == 'ROLE_ADMIN' %}
 
-        {% if  app.user.roles|first == 'ROLE_NATURALISTE' %}
+            <li class="sm-sub">
+                <a href="">
+                    <i class="zmdi zmdi-accounts"></i>
+                    <span>Utilisateurs</span>
+                </a>
+                <ul>
+                    <li><a href="{{ path("oc_back_profile") }}">Mon profil</a></li>
+                    <li><a href="{{ path("oc_back_users") }}">Voir les utilisateurs</a></li>
+                </ul>
+            </li>
+
+        {% endif %}
+
+        {% if  (app.user.roles|first == 'ROLE_NATURALISTE') or (app.user.roles|first == 'ROLE_ADMIN') %}
 
             <li class="sm-sub">
                 <a href="">
@@ -39,16 +53,6 @@
                 </ul>
             </li>
 
-            <li class="sm-sub">
-                <a href="">
-                    <i class="zmdi zmdi-account"></i>
-                    <span>Utilisateurs</span>
-                </a>
-                <ul>
-                    <li><a href="{{ path("oc_back_profile") }}">Mon profil</a></li>
-                    <li><a href="{{ path("oc_back_users") }}">Voir les utilisateurs</a></li>
-                </ul>
-            </li>
 
             <li>
                 <a href="{{ path('oc_back_observation_unvalidated') }}">
@@ -70,15 +74,15 @@
                 </ul>
             </li>
 
-            <li>
-                <a href="{{ path("oc_back_profile") }}">
-                    <i class="zmdi zmdi-account"></i>
-                    <span>Mon compte</span>
-                </a>
-            </li>
-
-
         {% endif %}
+
+        <li>
+            <a href="{{ path("oc_back_profile") }}">
+                <i class="zmdi zmdi-account"></i>
+                <span>Mon compte</span>
+            </a>
+        </li>
+
         <li>
             <a href="{{ path('oc_back_help') }}">
                 <i class="zmdi zmdi-help"></i>
