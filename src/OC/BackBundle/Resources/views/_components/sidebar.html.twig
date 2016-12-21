@@ -76,12 +76,16 @@
 
         {% endif %}
 
+        {% if app.user.roles|first != 'ROLE_ADMIN' %}
+
         <li>
             <a href="{{ path("oc_back_profile") }}">
                 <i class="zmdi zmdi-account"></i>
                 <span>Mon compte</span>
             </a>
         </li>
+
+        {% endif %}
 
         <li>
             <a href="{{ path('oc_back_help') }}">
